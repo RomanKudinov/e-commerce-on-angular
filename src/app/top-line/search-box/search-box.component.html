@@ -1,0 +1,8 @@
+<div [@showBottomBorder]="state" class="form-wrap">
+    <form>
+        <input [@showSearchBox]="state" type="search" placeholder="Search" (blur)="unBlur()" #search>
+    </form>
+    <button (click)="animate()">
+        <ng-content></ng-content>
+    </button>
+</div>

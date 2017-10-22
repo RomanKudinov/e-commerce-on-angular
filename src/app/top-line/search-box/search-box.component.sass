@@ -1,0 +1,36 @@
+\:host
+    align-items: center
+    display: flex
+    &.active
+        border-bottom: 2px solid black
+.form-wrap
+    display: flex
+    padding: 0 5px
+    height: 70%
+    button
+        padding: 5px
+        background-color: #232323
+        border: none
+        &:hover
+            cursor: pointer
+        &:focus
+            outline: none
+    form
+        overflow: hidden
+        input
+            transform: translateY(-100%)
+            opacity: 0
+            border: 0
+            height: 30px
+            color: #fff
+            outline: 0
+            font-size: 15px
+            width: 150px
+            background-color: #232323
+            &::-webkit-search-cancel-button
+                opacity: 0
+                pointer-events: none
+            &::-webkit-input-placeholder
+                text-transform: uppercase
+                font-size: 12px
+                color: #fff
