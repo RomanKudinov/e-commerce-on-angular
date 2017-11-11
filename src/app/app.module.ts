@@ -1,3 +1,4 @@
+import { TokenInteceptor } from './shared/token.interceptor';
 import { NavigationModule } from './navigation/navigation.module';
 import { AuthModule } from './auth/auth.module';
 import { NavigationService } from './shared/navigation.service';
@@ -8,7 +9,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HttpClientModule } from '@angular/common/http';
+import { HttpClientModule, HTTP_INTERCEPTORS } from '@angular/common/http';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
 import { RestDataService } from './shared/rest-data.service';
 
@@ -28,7 +29,12 @@ import { RestDataService } from './shared/rest-data.service';
   ],
   providers: [
     RestDataService,
-    NavigationService
+    NavigationService,
+    {
+      provide: HTTP_INTERCEPTORS,
+      useClass: TokenInteceptor,
+      multi: true
+    }
   ],
   bootstrap: [AppComponent]
 })

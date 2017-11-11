@@ -2785,6 +2785,63 @@ module.exports = function () {
                 "value": "ZW"
             }
         ],
-        products: []
+        products: [
+            {
+                id: 1,
+                name: 'Demi Bra',
+                description: 'This dreamy demi is even more heavenly, with softer Memory Fit lining that conforms to your curves, a smoothing U-shaped back and stretchier lace sides for a flawless, ultra-comfy fit.',
+                categories: ['Bras', 'Demi'],
+                price: 1736.48,
+                bandSize: [32, 34, 36, 38, 40],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                images: [],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 240
+            },
+            {
+                id: 2,
+                name: 'Perfect Coverage Bra',
+                description: 'Our fullest coverage and our sexiest comfort meet in this supersoft bra with lighter Memory Fit lining that conforms to your curves and a smoothing U-shaped back and sides.',
+                categories: ['Bras', 'Perfect Coverage'],
+                price: 1375.29,
+                bandSize: [32, 34, 36, 38, 40],
+                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                images: [],
+                rating: 4.4,
+                quantity: 1,
+                reviews: 845
+            },
+            {
+                id: 3,
+                name: 'Wicked Unlined Uplift Bra',
+                description: 'A little lift goes a long way: the push-up without padding in eyelash lace gives a comfy, natural boost thanks to a hidden sling.',
+                categories: ['Bras', 'Balconet'],
+                price: 958.53,
+                bandSize: [32, 34, 36, 38],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                images: [],
+                rating: 4.5,
+                quantity: 1,
+                reviews: 565
+            },
+            {
+                id: 4,
+                name: 'Multi-Way Bra',
+                description: 'Five ways to wear it for plenty of style options—in a supersoft fabric with lighter Memory Fit for extra support as it conforms to your curves.',
+                categories: ['Bras', 'Strapless'],
+                price: 1541.99,
+                bandSize: [32, 34, 36, 38],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                images: [],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 283
+            }
+        ]
     }
 }
