@@ -1,15 +1,19 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { RestDataService } from './rest-data.service';
 
 @Injectable()
 export class NavigationService {
+  public navigation: any;
 
-  private _url = 'http://localhost:2403/navigation';
-
-  constructor(private _http: HttpClient) { }
-
-  getNavigation() {
-    return this._http.get(this._url);
+  constructor(private _data: RestDataService) {
+    this._data.getNavigation()
+      .subscribe((res) => {
+        this.navigation = res;
+      });
   }
 
+  getNavigation(): any {
+    return this.navigation;
+  }
 }
+

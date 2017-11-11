@@ -1,6 +1,6 @@
+import { NavigationModule } from './navigation/navigation.module';
 import { AuthModule } from './auth/auth.module';
 import { NavigationService } from './shared/navigation.service';
-import { NavItemModule } from './nav-item/nav-item.module';
 import { TopLineModule } from './top-line/top-line.module';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
@@ -10,6 +10,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HttpClientModule } from '@angular/common/http';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
+import { RestDataService } from './shared/rest-data.service';
 
 @NgModule({
   declarations: [
@@ -20,12 +21,15 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
     AppRoutingModule,
     TopLineModule,
     BrowserAnimationsModule,
-    NavItemModule,
     HttpClientModule,
     AuthModule,
-    AngularFontAwesomeModule
+    AngularFontAwesomeModule,
+    NavigationModule
   ],
-  providers: [NavigationService],
+  providers: [
+    RestDataService,
+    NavigationService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

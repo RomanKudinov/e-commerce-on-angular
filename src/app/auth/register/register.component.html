@@ -1,3 +1,49 @@
-<p>
-  register works!
-</p>
+<section>
+  <div class="auth-form-wrapper">
+    <hr class="auth-top-hr">
+    <div class="auth-content">
+      <h1>Create An Account</h1>
+      <hr>
+      <form>
+        <fieldset>
+          <div class="input-line">
+            <label for="name">First Name</label>
+            <input name="name">
+          </div>
+          <div class="input-line">
+            <label for="email">Email Adress</label>
+            <input name="email">
+          </div>
+          <div class="input-line">
+            <label for="confemail">Confirm Email</label>
+            <input name="confemail">
+          </div>
+          <div class="input-line">
+            <label for="password">Create Password</label>
+            <input name="password">
+          </div>
+          <div class="input-line">
+            <label for="confpass">Confirm Password</label>
+            <input name="confpass">
+          </div>
+          <div class="input-line">
+            <label for="country">Country</label>
+            <select name="country">
+
+            </select>
+          </div>
+        </fieldset>
+        <hr>
+        <fieldset class="submit">
+          <div>
+              <span>
+                  Have an account already?
+                  <a routerLink="/login"> Sign In</a>
+              </span>
+              <button class="auth-fab-btn-primary">Submit</button>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </div>
+</section>

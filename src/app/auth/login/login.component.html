@@ -1,36 +1,38 @@
-<section class="wrapper">
-    <hr>
-    <div class="content">
-        <h1>Sign In</h1>
-        <div class="sections-wrapper">
-            <section class="login-section">
-                <h2>Registered Customers</h2>
-                <form>
-                    <label for="email">Email Adress</label>
-                    <input name="email">
-                    <div class="ps-wrap">
-                        <label for="password">Password</label>
-                        <button>
+<section>
+    <div class="auth-form-wrapper">
+        <hr class="auth-top-hr">
+        <div class="auth-content">
+            <h1>Sign In</h1>
+            <div class="sections-wrapper">
+                <section class="login-section">
+                    <h2>Registered Customers</h2>
+                    <form>
+                        <label for="email">Email Adress</label>
+                        <input name="email">
+                        <div class="ps-wrap">
+                            <label for="password">Password</label>
+                            <button>
                             Forgot Password 
                             <ng4-fa name="chevron-right"></ng4-fa>
                         </button>
-                    </div>
-                    <input type="password" name="password">
-                    <button class="fab-btn-primary">Secure Sign In</button>
-                </form>
-            </section>
-            <section class="red-reg">
-                <h2>Create An Account</h2>
-                <p>Register with VictoriasSecret.com to enjoy personalized services, including:</p>
-                <ul>
-                    <li>Online Order Status</li>
-                    <li>Love List</li>
-                    <li>Exclusive Emails</li>
-                    <li>Save Shipping Addresses</li>
-                    <li>Checkout Preferences</li>
-                </ul>
-                <button class="fab-btn-secondary">Create An Account</button>
-            </section>
+                        </div>
+                        <input type="password" name="password">
+                        <button class="auth-fab-btn-primary">Secure Sign In</button>
+                    </form>
+                </section>
+                <section class="red-reg">
+                    <h2>Create An Account</h2>
+                    <p>Register with VictoriasSecret.com to enjoy personalized services, including:</p>
+                    <ul>
+                        <li>Online Order Status</li>
+                        <li>Love List</li>
+                        <li>Exclusive Emails</li>
+                        <li>Save Shipping Addresses</li>
+                        <li>Checkout Preferences</li>
+                    </ul>
+                    <button class="fab-btn-secondary" routerLink="/register">Create An Account</button>
+                </section>
+            </div>
         </div>
     </div>
 </section>

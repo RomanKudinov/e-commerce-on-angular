@@ -1,87 +1,92 @@
-.wrapper
+::ng-deep.auth-form-wrapper
     width: 1180px
     margin: 0 auto
     min-height: 550px
-    hr
-        height: 4px
-        background-color: #e1e1e1
-        border: 0
-        border-radius: 4px
-        margin: 0
+::ng-deep hr.auth-top-hr
+    height: 4px
+    background-color: #e1e1e1
+    border: 0
+    border-radius: 4px
+    margin: 0
+    margin-bottom: 20px
+::ng-deep.auth-content
+    margin: 0 auto
+    font-size: 11px
+    line-height: 17px
+::ng-deep.auth-fab-btn-primary
+    font-size: 18px
+    text-transform: uppercase
+    font-family: 'Oswald', sans-serif
+    min-width: 150px
+    min-height: 35px
+    align-self: self-start
+    padding: 4px 26px 2px
+    background-color: #ef5f96
+    border: 2px solid #ef5f96
+    color: #fff
+    &:hover
+        border-color: #bf215d
+        cursor: pointer
+        &:focus
+            outline: 0
+.auth-content
+    width: 610px
+    h1
+        font-size: 26px
+        line-height: 31px
+        font-weight: 300
         margin-bottom: 20px
-    .content
-        width: 610px
-        margin: 0 auto
-        font-size: 11px
-        line-height: 17px
-        h1
-            font-size: 26px
-            line-height: 31px
-            font-weight: 300
-            margin-bottom: 20px
-        .sections-wrapper
-            display: flex
-            justify-content: space-between
-            button
-                font-size: 18px
-                text-transform: uppercase
-                font-family: 'Oswald', sans-serif
-                letter-spacing: .15em
-            .login-section
-                width: 260px
-                form
-                    display: flex
-                    flex-direction: column
-                    .ps-wrap
-                        display: flex
-                        justify-content: space-between
-                        button
-                            border: 0
-                            background-color: #fff
-                            font-size: 11px
-                            line-height: 17px
-                            font-family: 'Open Sans', sans-serif
-                            text-transform: none
-                            letter-spacing: 0em
-                            &:hover
-                                cursor: pointer
-                                color: #d91560
-                            &:focus
-                                outline: 0
-                            ng4-fa
-                                font-size: 8px
-                    input
-                        margin: 5px 0 20px
-                        padding: 10px
-                        border: 1px solid #e1e1e1
-                    .fab-btn-primary
-                        min-width: 150px
-                        min-height: 35px
-                        align-self: self-start
-                        padding: 4px 26px 2px
-                        background-color: #ef5f96
-                        border: 2px solid #ef5f96
-                        color: #fff
-                        &:hover
-                            border-color: #bf215d
-                            cursor: pointer
-            h2
-                margin-bottom: 20px
-                margin-top: 10px
-                font-size: 22px
-                line-height: 27px
-                font-weight: 300
-            .red-reg
-                width: 260px
+    .sections-wrapper
+        display: flex
+        justify-content: space-between
+        button
+            font-size: 18px
+            text-transform: uppercase
+            font-family: 'Oswald', sans-serif
+            letter-spacing: .15em
+        .login-section
+            width: 260px
+            form
                 display: flex
                 flex-direction: column
-                ul
-                    padding: 0 0 21px 15px
-                .fab-btn-secondary
-                    padding: 5px 26px 3px
-                    background-color: #fff
-                    border: 1px solid #000
-                    &:hover
-                     border-color: #ef5f96
-                     cursor: pointer
-
+                .ps-wrap
+                    display: flex
+                    justify-content: space-between
+                    button
+                        border: 0
+                        background-color: #fff
+                        font-size: 11px
+                        line-height: 17px
+                        font-family: 'Open Sans', sans-serif
+                        text-transform: none
+                        letter-spacing: 0em
+                        &:hover
+                            cursor: pointer
+                            color: #d91560
+                        &:focus
+                            outline: 0
+                        ng4-fa
+                            font-size: 8px
+                input
+                    margin: 5px 0 20px
+                    padding: 10px
+                    border: 1px solid #e1e1e1
+        h2
+            margin-bottom: 20px
+            margin-top: 10px
+            font-size: 22px
+            line-height: 27px
+            font-weight: 300
+        .red-reg
+            width: 260px
+            display: flex
+            flex-direction: column
+            ul
+                padding: 0 0 21px 15px
+            .fab-btn-secondary
+                padding: 5px 26px 3px
+                background-color: #fff
+                border: 1px solid #000
+                &:hover
+                 border-color: #ef5f96
+                 cursor: pointer

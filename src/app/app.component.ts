@@ -7,17 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./app.component.sass']
 })
 export class AppComponent implements OnInit {
-  navigation: any;
 
-  constructor(private navigationService: NavigationService) {
+  constructor(private _navigationService: NavigationService) {
   }
 
   ngOnInit() {
-    this.navigationService.getNavigation().subscribe(
-      (res) => {
-        this.navigation = res;
-        console.log(this.navigation);
-      });
+  }
+
+  get navigation() {
+    return this._navigationService.getNavigation();
   }
 
 }
