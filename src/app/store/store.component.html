@@ -1,0 +1,41 @@
+<hr class="top-hr">
+<ul>
+  <li *ngFor="let item of products">
+    <div>
+      <button class="like heart">
+          <ng4-fa name="heart" class="icon" size="5"></ng4-fa>
+      </button>
+      <button class="fab-btn-secondary quick-view-btn">Quick View</button>
+      <a [routerLink]="[item.link, item.id]">
+        <span>
+          <img src="{{item.titleImage}}" alt="{{item.alt}}" width="{{widthImg}}" height="{{heightImg}}">
+        </span>
+        <aside>
+          <div class="product-name">
+            <h3>
+                {{item.name}}
+            </h3>
+          </div>
+          <div class="product-rating">
+            {{item.rating}}
+          </div>
+          <div class="product-price">
+            <em>
+                {{item.price | currency:"USD": true}}
+            </em>
+          </div>
+          <div class="product-max-size">
+            <em>
+                Size up to {{item.bandSize[item.bandSize.length - 1]}}{{item.cupSize[item.cupSize.length - 1].toUpperCase()}}
+            </em>
+          </div>
+          <div class="product-color-quant">
+            <em>
+                {{item.color.length}} color
+            </em>
+          </div>
+        </aside>
+      </a>
+    </div>
+  </li>
+</ul>

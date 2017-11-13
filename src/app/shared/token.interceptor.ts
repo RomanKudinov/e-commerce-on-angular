@@ -8,7 +8,7 @@ export class TokenInteceptor implements HttpInterceptor {
     constructor(private _injector: Injector) {}
 
     intercept(req: HttpRequest<any>, next: HttpHandler) {
-        if (req.method === 'PUT' || req.method === 'DELETE') {
+        if (req.method === 'PUT' || req.method === 'DELETE' || req.method === 'POST') {
             const restData = this._injector.get(RestDataService);
             const reqClone = req.clone({headers: req.headers.set('Authorization', restData.authToken)});
 

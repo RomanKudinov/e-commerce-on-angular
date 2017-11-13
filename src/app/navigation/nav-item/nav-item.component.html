@@ -1,4 +1,4 @@
-<a class="list-item" [@sylishListItem]="state">
-  {{item[0].content}}
+<a class="list-item" [@sylishListItem]="state" [routerLink]="[item.link]">
+  {{item.content}}
 </a>
 <div [@showNavigation]="state" class="nav-wrapper" #section></div>

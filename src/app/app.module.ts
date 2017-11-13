@@ -1,3 +1,5 @@
+import { ProductService } from './shared/product.service';
+import { StoreModule } from './store/store.module';
 import { TokenInteceptor } from './shared/token.interceptor';
 import { NavigationModule } from './navigation/navigation.module';
 import { AuthModule } from './auth/auth.module';
@@ -25,11 +27,13 @@ import { RestDataService } from './shared/rest-data.service';
     HttpClientModule,
     AuthModule,
     AngularFontAwesomeModule,
-    NavigationModule
+    NavigationModule,
+    StoreModule
   ],
   providers: [
     RestDataService,
     NavigationService,
+    ProductService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInteceptor,

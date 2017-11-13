@@ -1,18 +1,21 @@
+const uuid = require('uuid');
+
 module.exports = function () {
     return {
         navigation: [
-            [
-                {
-                    "tagName": "a",
-                    "content": "New!"
-                }
-            ],
-            [
-                {
-                    "tagName": "a",
-                    "content": "Bras",
-                    "routerLink": '/bras'
-                },
+
+            {
+                "anchor": "a",
+                "content": "New!",
+                "link": '/new'
+            }
+            ,
+
+            {
+                "anchor": "a",
+                "content": "Bras",
+                "link": '/bras',
+                "section":
                 {
                     "tagName": "section",
                     "class": "nav",
@@ -65,7 +68,7 @@ module.exports = function () {
                                         {
                                             "tagName": "a",
                                             "content": "All Bras",
-                                            "routerLink": '/bras',
+                                            "link": '/bras',
                                             "children": [
                                                 {
                                                     "tagName": "i",
@@ -98,7 +101,7 @@ module.exports = function () {
                                                 {
                                                     "tagName": "a",
                                                     "content": "Demi",
-                                                    "routerLink": '/bras/demi'
+                                                    "link": '/bras/demi'
                                                 }
                                             ]
                                         },
@@ -107,7 +110,8 @@ module.exports = function () {
                                             "children": [
                                                 {
                                                     "tagName": "a",
-                                                    "content": "Perfect Coverage"
+                                                    "content": "Perfect Coverage",
+                                                    "link": "/bras/perfect-coverage"
                                                 }
                                             ]
                                         },
@@ -116,7 +120,8 @@ module.exports = function () {
                                             "children": [
                                                 {
                                                     "tagName": "a",
-                                                    "content": "Balconet"
+                                                    "content": "Balconet",
+                                                    "link": "/bras/balconet"
                                                 }
                                             ]
                                         },
@@ -125,7 +130,8 @@ module.exports = function () {
                                             "children": [
                                                 {
                                                     "tagName": "a",
-                                                    "content": "Strapless"
+                                                    "content": "Strapless",
+                                                    "link": "/bras/strapless"
                                                 }
                                             ]
                                         },
@@ -383,13 +389,14 @@ module.exports = function () {
                         }
                     ]
                 }
-            ],
-            [
-                {
-                    "tagName": "a",
-                    "content": "Panties",
-                    "routerLink": '/panties'
-                },
+            }
+            ,
+
+            {
+                "anchor": "a",
+                "content": "Panties",
+                "link": '/panties',
+                "section":
                 {
                     "tagName": "section",
                     "class": "nav",
@@ -605,14 +612,14 @@ module.exports = function () {
                         }
                     ]
                 }
-            ],
-            [
-                {
-                    "tagName": "a",
-                    "content": "Lingerie",
-                    "routerLink": '/lingerie'
-                    
-                },
+            }
+            ,
+
+            {
+                "anchor": "a",
+                "content": "Lingerie",
+                "link": '/lingerie',
+                "section":
                 {
                     "tagName": "section",
                     "class": "nav",
@@ -800,13 +807,14 @@ module.exports = function () {
                         }
                     ]
                 }
-            ],
-            [
-                {
-                    "tagName": "a",
-                    "content": "Sport Bras",
-                    "routerLink": '/sport-bras'
-                },
+            }
+            ,
+
+            {
+                "anchor": "a",
+                "content": "Sport Bras",
+                "link": '/sport-bras',
+                "section":
                 {
                     "tagName": "section",
                     "class": "nav",
@@ -1113,13 +1121,14 @@ module.exports = function () {
                         }
                     ]
                 }
-            ],
-            [
-                {
-                    "tagName": "a",
-                    "content": "Sleep",
-                    "routerLink": '/sleep'
-                },
+            }
+            ,
+
+            {
+                "anchor": "a",
+                "content": "Sleep",
+                "link": '/sleep',
+                "section":
                 {
                     "tagName": "section",
                     "class": "nav",
@@ -1351,13 +1360,14 @@ module.exports = function () {
                         }
                     ]
                 }
-            ],
-            [
-                {
-                    "tagName": "a",
-                    "content": "Beauty",
-                    "routerLink": '/beauty'
-                },
+            }
+            ,
+
+            {
+                "anchor": "a",
+                "content": "Beauty",
+                "link": '/beauty',
+                "section":
                 {
                     "tagName": "section",
                     "class": "nav",
@@ -1591,13 +1601,14 @@ module.exports = function () {
                         }
                     ]
                 }
-            ],
-            [
-                {
-                    "tagName": "a",
-                    "content": "Accessories",
-                    "routerLink": '/accessories'
-                },
+            }
+            ,
+
+            {
+                "anchor": "a",
+                "content": "Accessories",
+                "link": '/accessories',
+                "section":
                 {
                     "tagName": "section",
                     "class": "nav",
@@ -1740,13 +1751,14 @@ module.exports = function () {
                         }
                     ]
                 }
-            ],
-            [
-                {
-                    "tagName": "a",
-                    "content": "Sale",
-                    "routerLink": '/sale'
-                },
+            }
+            ,
+
+            {
+                "anchor": "a",
+                "content": "Sale",
+                "link": '/sale',
+                "section":
                 {
                     "tagName": "section",
                     "class": "nav",
@@ -1942,14 +1954,15 @@ module.exports = function () {
                         }
                     ]
                 }
-            ],
-            [
-                {
-                    "tagName": "a",
-                    "content": "Fashion Show",
-                    "routerLink": '/fashion-show'
-                }
-            ]
+            }
+            ,
+
+            {
+                "anchor": "a",
+                "content": "Fashion Show",
+                "link": '/fashion-show'
+            }
+
         ],
         countries: [
             {
@@ -2799,65 +2812,326 @@ module.exports = function () {
         ],
         products: [
             {
-                id: 1,
-                name: 'Demi Bra',
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Dream Angels Demi Bra',
                 description: 'This dreamy demi is even more heavenly, with softer Memory Fit lining that conforms to your curves, a smoothing U-shaped back and stretchier lace sides for a flawless, ultra-comfy fit.',
                 categories: ['bras', 'demi'],
                 price: 1736.48,
+                link: '/bras/demi',
                 bandSize: [32, 34, 36, 38, 40],
                 cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
                 color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: '',
+                titleImage: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
                 images: [],
                 rating: 4.3,
                 quantity: 1,
                 reviews: 240
             },
             {
-                id: 2,
+                id: uuid.v4().substr(0, 8), alt: "bra",
                 name: 'Perfect Coverage Bra',
                 description: 'Our fullest coverage and our sexiest comfort meet in this supersoft bra with lighter Memory Fit lining that conforms to your curves and a smoothing U-shaped back and sides.',
-                categories: ['bras', 'perfect coverage'],
+                categories: ['bras', 'perfect-coverage'],
                 price: 1375.29,
+                link: '/bras/perfect-coverage',
                 bandSize: [32, 34, 36, 38, 40],
                 cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
                 color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: '',
+                titleImage: '../../assets/072_H17_BRA_058_EH_103_e5699289.jpg',
                 images: [],
                 rating: 4.4,
                 quantity: 1,
                 reviews: 845
             },
             {
-                id: 3,
+                id: uuid.v4().substr(0, 8), alt: "bra",
                 name: 'Wicked Unlined Uplift Bra',
                 description: 'A little lift goes a long way: the push-up without padding in eyelash lace gives a comfy, natural boost thanks to a hidden sling.',
                 categories: ['bras', 'balconet'],
                 price: 958.53,
+                link: '/bras/balconet',
                 bandSize: [32, 34, 36, 38],
                 cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
                 color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: '',
+                titleImage: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg',
                 images: [],
                 rating: 4.5,
                 quantity: 1,
                 reviews: 565
             },
             {
-                id: 4,
+                id: uuid.v4().substr(0, 8), alt: "bra",
                 name: 'Multi-Way Bra',
                 description: 'Five ways to wear it for plenty of style options—in a supersoft fabric with lighter Memory Fit for extra support as it conforms to your curves.',
                 categories: ['bras', 'strapless'],
                 price: 1541.99,
+                link: '/bras/strapless',
                 bandSize: [32, 34, 36, 38],
                 cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
                 color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: '',
+                titleImage: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg',
                 images: [],
                 rating: 4.3,
                 quantity: 1,
                 reviews: 283
-            }
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Dream Angels Demi Bra',
+                description: 'This dreamy demi is even more heavenly, with softer Memory Fit lining that conforms to your curves, a smoothing U-shaped back and stretchier lace sides for a flawless, ultra-comfy fit.',
+                categories: ['bras', 'demi'],
+                price: 1736.48,
+                link: '/bras/demi',
+                bandSize: [32, 34, 36, 38, 40],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                images: [],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 240
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Perfect Coverage Bra',
+                description: 'Our fullest coverage and our sexiest comfort meet in this supersoft bra with lighter Memory Fit lining that conforms to your curves and a smoothing U-shaped back and sides.',
+                categories: ['bras', 'perfect-coverage'],
+                price: 1375.29,
+                link: '/bras/perfect-coverage',
+                bandSize: [32, 34, 36, 38, 40],
+                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/072_H17_BRA_058_EH_103_e5699289.jpg',
+                images: [],
+                rating: 4.4,
+                quantity: 1,
+                reviews: 845
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Wicked Unlined Uplift Bra',
+                description: 'A little lift goes a long way: the push-up without padding in eyelash lace gives a comfy, natural boost thanks to a hidden sling.',
+                categories: ['bras', 'balconet'],
+                price: 958.53,
+                link: '/bras/balconet',
+                bandSize: [32, 34, 36, 38],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg',
+                images: [],
+                rating: 4.5,
+                quantity: 1,
+                reviews: 565
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Multi-Way Bra',
+                description: 'Five ways to wear it for plenty of style options—in a supersoft fabric with lighter Memory Fit for extra support as it conforms to your curves.',
+                categories: ['bras', 'strapless'],
+                price: 1541.99,
+                link: '/bras/strapless',
+                bandSize: [32, 34, 36, 38],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg',
+                images: [],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 283
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Dream Angels Demi Bra',
+                description: 'This dreamy demi is even more heavenly, with softer Memory Fit lining that conforms to your curves, a smoothing U-shaped back and stretchier lace sides for a flawless, ultra-comfy fit.',
+                categories: ['bras', 'demi'],
+                price: 1736.48,
+                link: '/bras/demi',
+                bandSize: [32, 34, 36, 38, 40],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                images: [],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 240
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Perfect Coverage Bra',
+                description: 'Our fullest coverage and our sexiest comfort meet in this supersoft bra with lighter Memory Fit lining that conforms to your curves and a smoothing U-shaped back and sides.',
+                categories: ['bras', 'perfect-coverage'],
+                price: 1375.29,
+                link: '/bras/perfect-coverage',
+                bandSize: [32, 34, 36, 38, 40],
+                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/072_H17_BRA_058_EH_103_e5699289.jpg',
+                images: [],
+                rating: 4.4,
+                quantity: 1,
+                reviews: 845
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Wicked Unlined Uplift Bra',
+                description: 'A little lift goes a long way: the push-up without padding in eyelash lace gives a comfy, natural boost thanks to a hidden sling.',
+                categories: ['bras', 'balconet'],
+                price: 958.53,
+                link: '/bras/balconet',
+                bandSize: [32, 34, 36, 38],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg',
+                images: [],
+                rating: 4.5,
+                quantity: 1,
+                reviews: 565
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Multi-Way Bra',
+                description: 'Five ways to wear it for plenty of style options—in a supersoft fabric with lighter Memory Fit for extra support as it conforms to your curves.',
+                categories: ['bras', 'strapless'],
+                price: 1541.99,
+                link: '/bras/strapless',
+                bandSize: [32, 34, 36, 38],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg',
+                images: [],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 283
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Dream Angels Demi Bra',
+                description: 'This dreamy demi is even more heavenly, with softer Memory Fit lining that conforms to your curves, a smoothing U-shaped back and stretchier lace sides for a flawless, ultra-comfy fit.',
+                categories: ['bras', 'demi'],
+                price: 1736.48,
+                link: '/bras/demi',
+                bandSize: [32, 34, 36, 38, 40],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                images: [],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 240
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Perfect Coverage Bra',
+                description: 'Our fullest coverage and our sexiest comfort meet in this supersoft bra with lighter Memory Fit lining that conforms to your curves and a smoothing U-shaped back and sides.',
+                categories: ['bras', 'perfect-coverage'],
+                price: 1375.29,
+                link: '/bras/perfect-coverage',
+                bandSize: [32, 34, 36, 38, 40],
+                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/072_H17_BRA_058_EH_103_e5699289.jpg',
+                images: [],
+                rating: 4.4,
+                quantity: 1,
+                reviews: 845
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Wicked Unlined Uplift Bra',
+                description: 'A little lift goes a long way: the push-up without padding in eyelash lace gives a comfy, natural boost thanks to a hidden sling.',
+                categories: ['bras', 'balconet'],
+                price: 958.53,
+                link: '/bras/balconet',
+                bandSize: [32, 34, 36, 38],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg',
+                images: [],
+                rating: 4.5,
+                quantity: 1,
+                reviews: 565
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Multi-Way Bra',
+                description: 'Five ways to wear it for plenty of style options—in a supersoft fabric with lighter Memory Fit for extra support as it conforms to your curves.',
+                categories: ['bras', 'strapless'],
+                price: 1541.99,
+                link: '/bras/strapless',
+                bandSize: [32, 34, 36, 38],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg',
+                images: [],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 283
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Dream Angels Demi Bra',
+                description: 'This dreamy demi is even more heavenly, with softer Memory Fit lining that conforms to your curves, a smoothing U-shaped back and stretchier lace sides for a flawless, ultra-comfy fit.',
+                categories: ['bras', 'demi'],
+                price: 1736.48,
+                link: '/bras/demi',
+                bandSize: [32, 34, 36, 38, 40],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                images: [],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 240
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Perfect Coverage Bra',
+                description: 'Our fullest coverage and our sexiest comfort meet in this supersoft bra with lighter Memory Fit lining that conforms to your curves and a smoothing U-shaped back and sides.',
+                categories: ['bras', 'perfect-coverage'],
+                price: 1375.29,
+                link: '/bras/perfect-coverage',
+                bandSize: [32, 34, 36, 38, 40],
+                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/072_H17_BRA_058_EH_103_e5699289.jpg',
+                images: [],
+                rating: 4.4,
+                quantity: 1,
+                reviews: 845
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Wicked Unlined Uplift Bra',
+                description: 'A little lift goes a long way: the push-up without padding in eyelash lace gives a comfy, natural boost thanks to a hidden sling.',
+                categories: ['bras', 'balconet'],
+                price: 958.53,
+                link: '/bras/balconet',
+                bandSize: [32, 34, 36, 38],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg',
+                images: [],
+                rating: 4.5,
+                quantity: 1,
+                reviews: 565
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Multi-Way Bra',
+                description: 'Five ways to wear it for plenty of style options—in a supersoft fabric with lighter Memory Fit for extra support as it conforms to your curves.',
+                categories: ['bras', 'strapless'],
+                price: 1541.99,
+                link: '/bras/strapless',
+                bandSize: [32, 34, 36, 38],
+                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
+                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                titleImage: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg',
+                images: [],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 283
+            },
+            
         ]
     }
 }

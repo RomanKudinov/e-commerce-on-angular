@@ -1,5 +1,14 @@
-import { Component, OnInit, Input, ElementRef, ViewChild, Renderer2, AfterViewInit, HostListener } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ViewChild, Renderer2, AfterViewInit, ViewContainerRef } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Router } from '@angular/router';
+
+import { Observable } from 'rxjs/Observable';
+import 'rxjs/add/observable/fromEvent';
+import 'rxjs/add/operator/map';
+import 'rxjs/add/operator/merge';
+
+import { NavItem } from '../../model/nav-item.model';
+
 
 @Component({
   selector: 'vs-nav-item',
@@ -26,16 +35,29 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
     ])
   ]
 })
-export class NavItemComponent implements AfterViewInit {
-  @Input() item: Object;
+export class NavItemComponent implements OnInit, AfterViewInit {
+  @Input() item: NavItem;
   @ViewChild('section') section: ElementRef;
   public state = 'start';
 
-  constructor(private _renderer: Renderer2) { }
+  constructor(private _renderer: Renderer2,
+    private _router: Router,
+    private _vcr: ViewContainerRef) { }
+
+  ngOnInit() {
+    const $mouseenter = Observable.fromEvent(this._vcr.element.nativeElement, 'mouseenter')
+      .map((e) => 'end');
+    const $mouseleave = Observable.fromEvent(this._vcr.element.nativeElement, 'mouseleave')
+      .map((e) => 'start');
+
+      $mouseenter.merge($mouseleave).subscribe((state) => {
+        this.state = state;
+      });
+  }
 
   ngAfterViewInit() {
-    if (this.item[1]) {
-      this.renderedSection(this.item[1], this.section.nativeElement);
+    if (this.item.section) {
+      this.renderedSection(this.item.section, this.section.nativeElement);
     }
   }
 
@@ -44,12 +66,18 @@ export class NavItemComponent implements AfterViewInit {
 
     if (elem.class) {
       elem.class.forEach ?
-      elem.class.forEach((i) => this._renderer.addClass(currentElem, i)) : this._renderer.addClass(currentElem, elem.class);
+        elem.class.forEach((i) => this._renderer.addClass(currentElem, i)) : this._renderer.addClass(currentElem, elem.class);
     }
 
     if (elem.content) {
       const text = this._renderer.createText(elem.content);
       this._renderer.appendChild(currentElem, text);
+    }
+
+    if (elem.link) {
+      this._renderer.listen(currentElem, 'click', () => {
+        this._router.navigateByUrl(`${elem.link}`);
+      });
     }
 
     this._renderer.appendChild(parent, currentElem);
@@ -60,15 +88,4 @@ export class NavItemComponent implements AfterViewInit {
       });
     }
   }
-
-  @HostListener('mouseenter')
-  changeStateToBlock() {
-    this.state = 'end';
-  }
-
-  @HostListener('mouseleave')
-  changeStateToNone() {
-    this.state = 'start';
-  }
-
 }
