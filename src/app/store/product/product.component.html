@@ -1,3 +1,120 @@
-<p>
-  product works!
-</p>
+<hr class="top-hr">
+<div class="product-wrapper">
+  <div class="alt-img-wrapper">
+    <div *ngFor="let img of images; let i = index" class="alt-img-wrap">
+      <input type="radio" name="alt-images" (change)="changeImage(img)" id="img-{{i+1}}">
+      <label class="alt-img" for="img-{{i+1}}">
+        <img [src]="img.src" [alt]="img.alt">
+      </label>
+    </div>
+  </div>
+  <div class="title-img-wrapper">
+    <button class="heart">
+      <fa name="heart" class="icon" size="5"></fa>
+    </button>
+    <img src="{{selectedImage?.src}}" alt="{{selectedImage?.src}}" class="title-img">
+  </div>
+  <div class="product-desc-wrapper">
+    <h3>{{product?.name}}</h3>
+    <div class="product-desc-wrap">
+      <span class="stars-wrap">
+        <span class="rating full-stars"></span>
+        <span class="rating rating-stars" [style.width.%]="ratingWidth"></span>
+      </span>
+      <span>
+        <a href="/">
+          <small>
+            {{product?.rating}}
+          </small>
+        </a>
+      </span>
+      <span>
+        <fa name="chevron-right" class="icon"></fa>
+        <a href="/">
+          <small>
+            {{product?.reviews}} Reviews
+          </small>
+        </a>
+      </span>
+      <span>
+        <fa name="chevron-right" class="icon"></fa>
+        <a href="/">
+          <small>
+            Write review
+          </small>
+        </a>
+      </span>
+    </div>
+    <div class="price-wrapper">
+      <h4>
+        {{product?.price | currency:"USD"}}
+      </h4>
+    </div>
+    <hr>
+    <form>
+      <h4>
+          Color
+          <span class="title">
+            {{colorTitle}}
+          </span>
+      </h4>
+      <div class="colors-wrapper">
+        <div *ngFor="let item of product?.colors; let i = index">
+          <input type="radio" name="alt-images-color" id="img-color-{{i+1}}" (change)="changeTitle(item.alt, 'color')">
+          <label for="img-color-{{i+1}}">
+            <img [src]="item.src" [alt]="item.alt">
+          </label>
+        </div>
+      </div>
+      <h4>
+          Band Size
+          <span class="title">
+            {{bandSizeTitle}}
+          </span>
+      </h4>
+      <div class="band-size-wrapper">
+        <div *ngFor="let item of product?.bandSize; let i = index">
+          <input type="radio" name="band-size" id="band-size-{{i+1}}" (change)="changeTitle(item.title, 'bandSize')">
+          <label for="band-size-{{i+1}}">{{item.title}}</label>
+        </div>
+      </div>
+      <h4>
+          Cup Size
+          <span class="title">
+            {{cupSizeTitle?.toUpperCase()}}
+          </span>
+      </h4>
+      <div class="cup-size-wrapper">
+        <div *ngFor="let item of product?.cupSize; let i = index">
+          <input type="radio" name="cup-size" id="cup-size-{{i+1}}" (change)="changeTitle(item.title, 'cupSize')">
+          <label for="cup-size-{{i+1}}">{{item.title.toUpperCase()}}</label>
+        </div>
+      </div>
+      <a href="/" class="size">
+        <span>Size & Fit</span>
+        <fa name="chevron-right" class="icon" size="5"></fa>
+      </a>
+      <div class="quantity-wrapper">
+        <button type="button" [disabled]="quantity <= 1" (click)="changeQuantity('minus')">
+          <svg width="10" height="10">
+            <path stroke="#5b5b5b" stroke-width="1" d="M 0 5 L 10 5" />
+          </svg>
+        </button>
+        <span>Qty {{quantity}}</span>
+        <button type="button" [disabled]="quantity >= product?.quantity" (click)="changeQuantity('plus')">
+          <svg width="10" height="10">
+            <path stroke="#5b5b5b" stroke-width="1" d="M 5 0 L 5 10 M 0 5 L 10 5" />
+          </svg>
+        </button>
+      </div>
+      <button class="fab-btn-primary">Add to bag</button>
+    </form>
+    <div class="desc-wrapper">
+      <h4>Description</h4>
+      <p>
+        {{product?.description}}
+      </p>
+    </div>
+  </div>
+
+</div>

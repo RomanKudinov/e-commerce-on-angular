@@ -3,9 +3,11 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
 import { Router } from '@angular/router';
 
 import { Observable } from 'rxjs/Observable';
-import 'rxjs/add/observable/fromEvent';
-import 'rxjs/add/operator/map';
-import 'rxjs/add/operator/merge';
+import { fromEvent} from 'rxjs/observable/fromEvent';
+import { map, merge } from 'rxjs/operators';
+// import 'rxjs/add/observable/fromEvent';
+// import 'rxjs/add/operator/map';
+// import 'rxjs/add/operator/merge';
 
 import { NavItem } from '../../model/nav-item.model';
 
@@ -20,7 +22,7 @@ import { NavItem } from '../../model/nav-item.model';
         display: 'none',
       })),
       state('end', style({
-        dislay: 'block',
+        display: 'block',
       }))
     ]),
     trigger('sylishListItem', [
@@ -45,13 +47,18 @@ export class NavItemComponent implements OnInit, AfterViewInit {
     private _vcr: ViewContainerRef) { }
 
   ngOnInit() {
-    const $mouseenter = Observable.fromEvent(this._vcr.element.nativeElement, 'mouseenter')
-      .map((e) => 'end');
-    const $mouseleave = Observable.fromEvent(this._vcr.element.nativeElement, 'mouseleave')
-      .map((e) => 'start');
+    const $mouseenter = fromEvent(this._vcr.element.nativeElement, 'mouseenter').pipe(
+      map((e) => 'end')
+    );
 
-      $mouseenter.merge($mouseleave).subscribe((state) => {
-        this.state = state;
+    const $mouseleave = fromEvent(this._vcr.element.nativeElement, 'mouseleave').pipe(
+      map((e) => 'start')
+    );
+
+      $mouseenter.pipe(
+        merge($mouseleave)
+      ).subscribe((s) => {
+        this.state = s;
       });
   }
 

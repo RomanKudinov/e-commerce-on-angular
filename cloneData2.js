@@ -2818,9 +2818,172 @@ module.exports = function () {
                 categories: ['bras', 'demi'],
                 price: 1736.48,
                 link: '/bras/demi',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg', alt: 'bra' },
+                images: [
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/09/0a/090a39f0628a4221a88ac02c64105ee7/V504636_OM_F.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/cc/87/cc87cc3d818248b49ff908cf08fd7b56/V504636_OM_B.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/d9/34/d934f9c2a3564b3184d459e9a1b92820/V504636_OF_F.jpg',
+                        alt: 'bra'
+                    },
+                ],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 240
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Perfect Coverage Bra',
+                description: 'Our fullest coverage and our sexiest comfort meet in this supersoft bra with lighter Memory Fit lining that conforms to your curves and a smoothing U-shaped back and sides.',
+                categories: ['bras', 'perfect-coverage'],
+                price: 1375.29,
+                link: '/bras/perfect-coverage',
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
+                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
+                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                rating: 4.4,
+                quantity: 1,
+                reviews: 845
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Wicked Unlined Uplift Bra',
+                description: 'A little lift goes a long way: the push-up without padding in eyelash lace gives a comfy, natural boost thanks to a hidden sling.',
+                categories: ['bras', 'balconet'],
+                price: 958.53,
+                link: '/bras/balconet',
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
+                titleImage: { src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
+                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                rating: 4.5,
+                quantity: 1,
+                reviews: 565
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Multi-Way Bra',
+                description: 'Five ways to wear it for plenty of style options—in a supersoft fabric with lighter Memory Fit for extra support as it conforms to your curves.',
+                categories: ['bras', 'strapless'],
+                price: 1541.99,
+                link: '/bras/strapless',
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
+                titleImage: { src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
+                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                rating: 4.3,
+                quantity: 1,
+                reviews: 283
+            },
+            {
+                id: uuid.v4().substr(0, 8), alt: "bra",
+                name: 'Dream Angels Demi Bra',
+                description: 'This dreamy demi is even more heavenly, with softer Memory Fit lining that conforms to your curves, a smoothing U-shaped back and stretchier lace sides for a flawless, ultra-comfy fit.',
+                categories: ['bras', 'demi'],
+                price: 1736.48,
+                link: '/bras/demi',
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
                 images: [
                     {
@@ -2851,9 +3014,25 @@ module.exports = function () {
                 categories: ['bras', 'perfect-coverage'],
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
                 images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.4,
@@ -2867,9 +3046,25 @@ module.exports = function () {
                 categories: ['bras', 'balconet'],
                 price: 958.53,
                 link: '/bras/balconet',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
                 images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.5,
@@ -2883,9 +3078,25 @@ module.exports = function () {
                 categories: ['bras', 'strapless'],
                 price: 1541.99,
                 link: '/bras/strapless',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
                 images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.3,
@@ -2899,11 +3110,45 @@ module.exports = function () {
                 categories: ['bras', 'demi'],
                 price: 1736.48,
                 link: '/bras/demi',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                images: [
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                ],
                 rating: 4.3,
                 quantity: 1,
                 reviews: 240
@@ -2915,11 +3160,27 @@ module.exports = function () {
                 categories: ['bras', 'perfect-coverage'],
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/072_H17_BRA_058_EH_103_e5699289.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.4,
                 quantity: 1,
                 reviews: 845
@@ -2931,9 +3192,25 @@ module.exports = function () {
                 categories: ['bras', 'balconet'],
                 price: 958.53,
                 link: '/bras/balconet',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
                 images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.5,
@@ -2947,9 +3224,25 @@ module.exports = function () {
                 categories: ['bras', 'strapless'],
                 price: 1541.99,
                 link: '/bras/strapless',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
                 images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.3,
@@ -2963,11 +3256,45 @@ module.exports = function () {
                 categories: ['bras', 'demi'],
                 price: 1736.48,
                 link: '/bras/demi',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                images: [
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                ],
                 rating: 4.3,
                 quantity: 1,
                 reviews: 240
@@ -2979,9 +3306,25 @@ module.exports = function () {
                 categories: ['bras', 'perfect-coverage'],
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
                 images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.4,
@@ -2995,9 +3338,25 @@ module.exports = function () {
                 categories: ['bras', 'balconet'],
                 price: 958.53,
                 link: '/bras/balconet',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
                 images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.5,
@@ -3011,9 +3370,25 @@ module.exports = function () {
                 categories: ['bras', 'strapless'],
                 price: 1541.99,
                 link: '/bras/strapless',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
                 images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.3,
@@ -3027,11 +3402,45 @@ module.exports = function () {
                 categories: ['bras', 'demi'],
                 price: 1736.48,
                 link: '/bras/demi',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                images: [
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        alt: 'bra'
+                    },
+                ],
                 rating: 4.3,
                 quantity: 1,
                 reviews: 240
@@ -3043,9 +3452,25 @@ module.exports = function () {
                 categories: ['bras', 'perfect-coverage'],
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
                 images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.4,
@@ -3059,73 +3484,25 @@ module.exports = function () {
                 categories: ['bras', 'balconet'],
                 price: 958.53,
                 link: '/bras/balconet',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
-                rating: 4.5,
-                quantity: 1,
-                reviews: 565
-            },
-            {
-                id: uuid.v4().substr(0, 8), alt: "bra",
-                name: 'Multi-Way Bra',
-                description: 'Five ways to wear it for plenty of style options—in a supersoft fabric with lighter Memory Fit for extra support as it conforms to your curves.',
-                categories: ['bras', 'strapless'],
-                price: 1541.99,
-                link: '/bras/strapless',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
-                rating: 4.3,
-                quantity: 1,
-                reviews: 283
-            },
-            {
-                id: uuid.v4().substr(0, 8), alt: "bra",
-                name: 'Dream Angels Demi Bra',
-                description: 'This dreamy demi is even more heavenly, with softer Memory Fit lining that conforms to your curves, a smoothing U-shaped back and stretchier lace sides for a flawless, ultra-comfy fit.',
-                categories: ['bras', 'demi'],
-                price: 1736.48,
-                link: '/bras/demi',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
-                rating: 4.3,
-                quantity: 1,
-                reviews: 240
-            },
-            {
-                id: uuid.v4().substr(0, 8), alt: "bra",
-                name: 'Perfect Coverage Bra',
-                description: 'Our fullest coverage and our sexiest comfort meet in this supersoft bra with lighter Memory Fit lining that conforms to your curves and a smoothing U-shaped back and sides.',
-                categories: ['bras', 'perfect-coverage'],
-                price: 1375.29,
-                link: '/bras/perfect-coverage',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
-                rating: 4.4,
-                quantity: 1,
-                reviews: 845
-            },
-            {
-                id: uuid.v4().substr(0, 8), alt: "bra",
-                name: 'Wicked Unlined Uplift Bra',
-                description: 'A little lift goes a long way: the push-up without padding in eyelash lace gives a comfy, natural boost thanks to a hidden sling.',
-                categories: ['bras', 'balconet'],
-                price: 958.53,
-                link: '/bras/balconet',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
                 images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.5,
@@ -3139,16 +3516,31 @@ module.exports = function () {
                 categories: ['bras', 'strapless'],
                 price: 1541.99,
                 link: '/bras/strapless',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { title: 'Black with Lace Back', alt: 'Black with Lace Back', src: '../../assets/V507782_BVJ_SW.jpg' },
+                    { title: 'Vintage Rose with Lace Back', alt: 'Vintage Rose with Lace Back', src: '../../assets/V505878_S62_SW.jpg' },
+                    { title: 'Pastel Blue with Lace Back', alt: 'Pastel Blue with Lace Back', src: '../../assets/V505781_CTQ_SW.jpg' }
+                ],
                 titleImage: { src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
                 rating: 4.3,
                 quantity: 1,
                 reviews: 283
-            },
-
+            }
         ]
     }
 }

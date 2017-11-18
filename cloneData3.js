@@ -2818,30 +2818,64 @@ module.exports = function () {
                 categories: ['bras', 'demi'],
                 price: 1736.48,
                 link: '/bras/demi',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", alt: "Black with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/46/50/4650f07345e948a394c77848bfd36ab4/V505878_S62_SW.jpg", alt: "Vintage Rose with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/98/bb/98bb40748f2e44a8abaffbc2d68bb4c2/V505781_CTQ_SW.jpg", alt: "Pastel Blue with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a2/c9/a2c97fcf4d044cbb84bec282fadfd293/V504802_CQM_SW.jpg", alt: "Gold Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/99/cd/99cda39134af43c6943c687d2dc46c60/V504779_CQN_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/20/4c/204c5ff2d51644c183e5e385012a1d20/V505697_CQP_SW.jpg", alt: "Antique Lavender with Rose Gold Foil" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/93/87/93878a9ac32f4b31b52cbaad8af6cc35/V506988_CYA_SW.jpg", alt: "Pink Ivory with White Gold Foil" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V859360_DK9.jpg", alt: "Ivory with Silver Foil" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7b/85/7b85474fcd09489c9b093190699b5ed6/V508246_BVM_SW.jpg", alt: "Black Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/ba/84/ba844794c88946608e895cc9416241d5/V504912_BVN_SW.jpg", alt: "Black Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/84/2484f9e80d374592b013f70c00ea1b50/V497025_BPU_SW.jpg", alt: "Kir Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/36/6a/366afd17534e4be599b08ea7d639e3f3/V504636_BWJ_SW.jpg", alt: "Desire with Evening Blush" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/5c/e5/5ce5c79c797e4d8fb3af731f75165223/V504932_CFT_SW.jpg", alt: "Festive Green with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/19/2a/192ad085746f417dbde9b308a722d6b8/V504113_CFU_SW.jpg", alt: "Heirloom Lilac with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/38/a7/38a7658ce638468bbcd5a473f103eebf/V504149_CFS_SW.jpg", alt: "Coconut White with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8a/68/8a6858911ce14eab85cd11c98244f4fd/V507817_BVK_SW.jpg", alt: "Black Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/e1/6b/e16b87fa38324e9eaadb698635dbb069/V504204_BPV_SW.jpg", alt: "Kir With Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V878493_DK9.jpg", alt: "White with Shell Pink Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", alt: "Evening Blush with Pinky Cheeks Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/VS_P_SMBOD_BLK_093.jpg", alt: "Black with Metropolis Crossdye" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg', alt: 'bra' },
                 images: [
                     {
-                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg',
                         alt: 'bra'
                     },
                     {
-                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/09/0a/090a39f0628a4221a88ac02c64105ee7/V504636_OM_F.jpg',
                         alt: 'bra'
                     },
                     {
-                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/cc/87/cc87cc3d818248b49ff908cf08fd7b56/V504636_OM_B.jpg',
                         alt: 'bra'
                     },
                     {
-                        src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg',
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/d9/34/d934f9c2a3564b3184d459e9a1b92820/V504636_OF_F.jpg',
                         alt: 'bra'
                     },
                 ],
                 rating: 4.3,
-                quantity: 1,
+                quantity: 10,
                 reviews: 240
             },
             {
@@ -2851,13 +2885,66 @@ module.exports = function () {
                 categories: ['bras', 'perfect-coverage'],
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", alt: "Burnished Lilac Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/37/ec/37ec4248a69d49d583adb0daa45fbcaa/V505523_2C2_SW.jpg", alt: "Winter Lake Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/76/fa/76facd57125e458eac2b13a055d91a44/V505733_CPH_SW.jpg", alt: "Nile Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9b/4a/9b4a785a845b416e9027354e011420e6/V505854_S62_SW.jpg", alt: "Vintage Rose Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8c/df/8cdf11974871408fb19afe3572d70a42/V504843_CDS_SW.jpg", alt: "Desire Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8d/74/8d74333d05144cbf99dd35deca2e2944/V504688_5HR_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/2a/7d/2a7dcc2dc276477bbbda0d9e29be7f77/V504687_204_SW.jpg", alt: "Black Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/ab/48/ab487b9744594885bfb4b131b32184b7/V502262_15G_SW.jpg", alt: "Coconut White Allover Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/29/45/2945e0d12d8b40d88a84062c4b28655c/V502233_3TW_SW.jpg", alt: "Black Allover Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a7/3e/a73e96b4f01f475ea75f7374c2db08b4/V497031_093_SW.jpg", alt: "Black with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/65/96/659681e5e727404391d76f20fa3e94e0/V497032_3CA_SW.jpg", alt: "Metropolis with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4d/bd/4dbd30a4e67e41b8aee660877f573368/V497006_BTA_SW.jpg", alt: "Sassafras with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/cf/b0/cfb0588a31434b9192e77568e317c49b/V505872_BWJ_SW.jpg", alt: "Desire with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/2d/14/2d1429e7859941119ce86f61897ea616/V496974_7V7_SW.jpg", alt: "Dark Iron with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/13/a3/13a30141acab445dac623df3841c5ae4/V505667_3DQ_SW.jpg", alt: "Dark and Stormy with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/83/2f/832faa75fccd4c548d894c801f4b1895/V504412_BTC_SW.jpg", alt: "Festive Green with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dd/2e/dd2e74ac10e4477b8a79ec4f739c95d8/V498500_BSZ_SW.jpg", alt: "Wood Rose with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/da/a3/daa3d612068c4441b6db9bfac893fbcf/V505578_S38_SW.jpg", alt: "Powder Blush with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/e2/a1/e2a175d0d35740a2a6f4b07588c08954/V497023_9TX_SW.jpg", alt: "Pink Ivory with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/c1/c5/c1c529d16f474fbc951f20dbd286a36c/V497045_9E2_SW.jpg", alt: "Coconut White with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479635_A56_SW.jpg", alt: "Black Rebel Crochet Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480790_68N_SW.jpg", alt: "Angel Pink Rebel Crochet Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/25/d2/25d24c8431bd43e0bf2b189b37f6f604/V500937_4AX_SW.jpg", alt: "Sweet Amaretto with Mesh Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/33/33/3333539c77e94f76b56b8561010e6b62/V501120_BTF_SW.jpg", alt: "Blue Haze with Mesh Trim" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V870534_DK9.jpg", alt: "White" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f7/34/f734bb3d7a8445a5889442acff089483/V491073_H38_SW.jpg", alt: "Sheer Pink" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480817_M58_SW.jpg", alt: "Champagne" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479616_DJ5_SW.jpg", alt: "Almost Nude" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479615_B5D_SW.jpg", alt: "Silver Pewter" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480816_9CY_SW.jpg", alt: "Rosy Mauve" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d6/f6/d6f6613aa1774f17b29c1a7e5354d007/V504735_79E_SW.jpg", alt: "Vibrant Red" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/73/5b/735b9bc053094fc5b48575237767f968/V504420_BUF_SW.jpg", alt: "Pink Plum" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/83/42/8342f45b0a42449bb188aa3ddb6eeaa2/V498524_3JT_SW.jpg", alt: "Classic Navy" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d3/f0/d3f005a864454f068e09761162b0a96b/V499572_BPV_SW.jpg", alt: "Kir" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479618_DL3_SW.jpg", alt: "Black" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/3c/fd/3cfd07d4dbc24055abae6fe6b1e14ebf/082_H17_BRA_057_EH_105_e5699122.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/3c/fd/3cfd07d4dbc24055abae6fe6b1e14ebf/082_H17_BRA_057_EH_105_e5699122.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/85/09/850930c2e06047d9a23ac17e1a75809a/V504843_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/94/1f/941f446860604444bee6c7954e37928f/V504843_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/9a/1c/9a1cb1c2bc8841baab6f72ca0568c23d/V504843_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.4,
-                quantity: 1,
+                quantity: 7,
                 reviews: 845
             },
             {
@@ -2867,13 +2954,36 @@ module.exports = function () {
                 categories: ['bras', 'balconet'],
                 price: 958.53,
                 link: '/bras/balconet',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", alt: "White with Shell Pink Crossdye" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/3f/3d/3f3d782ce11a40ba99aaf3893ffcebbf/V500110_BPU_SW.jpg", alt: "Kir Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/67/2467d9057ff24b7ab379e6a3f475d83a/V504699_CQN_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", alt: "Evening Blush with Pinky Cheeks Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V847290_DL3.jpg", alt: "Black with Metropolis Crossdye" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/6e/a0/6ea0b6063133473db2593c9da6a76c66/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/6e/a0/6ea0b6063133473db2593c9da6a76c66/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/56/5a/565a55fab5cd42e9aac4491e0e549fae/V500110_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/d9/f2/d9f2caebd2944a3c8d60a943abf45268/V500110_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/aa/be/aabe75e9896f44a8a5a51150181da5aa/V500110_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.5,
-                quantity: 1,
+                quantity: 9,
                 reviews: 565
             },
             {
@@ -2883,13 +2993,40 @@ module.exports = function () {
                 categories: ['bras', 'strapless'],
                 price: 1541.99,
                 link: '/bras/strapless',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", alt: "Wood Rose with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479586_DK9_SW.jpg", alt: "White" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dc/86/dc867b0af770493284fbf087c5eda248/V496915_9TX_SW.jpg", alt: "Pink Ivory" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479585_DJ5_SW.jpg", alt: "Almost Nude" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dd/60/dd6046b0fb5c42829217be934d7afb83/V505798_S62_SW.jpg", alt: "Vintage Rose" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/60/65/6065eeb3b3964466be6cbfc0e0e8da29/V504684_072_SW.jpg", alt: "Grey Oasis" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d7/19/d719d97ac9cf487aa16747f567059f5f/V503712_7V7_SW.jpg", alt: "Dark Iron" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9a/75/9a75058c402c4ec4a2237a186edb2f87/V503686_4AX_SW.jpg", alt: "Sweet Amaretto" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479587_DL3_SW.jpg", alt: "Black" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/47/1e/471e18449c45442191c56492b92bca35/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/47/1e/471e18449c45442191c56492b92bca35/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/44/88/4488c850179b4a30aa0506617f14befd/V496915_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/6c/76/6c76e1639bce4a92b005e0df4b126ff5/V496915_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/bf/e1/bfe1049c691e45d6903decc5a395ef91/V496915_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.3,
-                quantity: 1,
+                quantity: 5,
                 reviews: 283
             },
             {
@@ -2899,13 +3036,64 @@ module.exports = function () {
                 categories: ['bras', 'demi'],
                 price: 1736.48,
                 link: '/bras/demi',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", alt: "Black with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/46/50/4650f07345e948a394c77848bfd36ab4/V505878_S62_SW.jpg", alt: "Vintage Rose with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/98/bb/98bb40748f2e44a8abaffbc2d68bb4c2/V505781_CTQ_SW.jpg", alt: "Pastel Blue with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a2/c9/a2c97fcf4d044cbb84bec282fadfd293/V504802_CQM_SW.jpg", alt: "Gold Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/99/cd/99cda39134af43c6943c687d2dc46c60/V504779_CQN_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/20/4c/204c5ff2d51644c183e5e385012a1d20/V505697_CQP_SW.jpg", alt: "Antique Lavender with Rose Gold Foil" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/93/87/93878a9ac32f4b31b52cbaad8af6cc35/V506988_CYA_SW.jpg", alt: "Pink Ivory with White Gold Foil" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V859360_DK9.jpg", alt: "Ivory with Silver Foil" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7b/85/7b85474fcd09489c9b093190699b5ed6/V508246_BVM_SW.jpg", alt: "Black Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/ba/84/ba844794c88946608e895cc9416241d5/V504912_BVN_SW.jpg", alt: "Black Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/84/2484f9e80d374592b013f70c00ea1b50/V497025_BPU_SW.jpg", alt: "Kir Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/36/6a/366afd17534e4be599b08ea7d639e3f3/V504636_BWJ_SW.jpg", alt: "Desire with Evening Blush" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/5c/e5/5ce5c79c797e4d8fb3af731f75165223/V504932_CFT_SW.jpg", alt: "Festive Green with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/19/2a/192ad085746f417dbde9b308a722d6b8/V504113_CFU_SW.jpg", alt: "Heirloom Lilac with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/38/a7/38a7658ce638468bbcd5a473f103eebf/V504149_CFS_SW.jpg", alt: "Coconut White with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8a/68/8a6858911ce14eab85cd11c98244f4fd/V507817_BVK_SW.jpg", alt: "Black Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/e1/6b/e16b87fa38324e9eaadb698635dbb069/V504204_BPV_SW.jpg", alt: "Kir With Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V878493_DK9.jpg", alt: "White with Shell Pink Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", alt: "Evening Blush with Pinky Cheeks Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/VS_P_SMBOD_BLK_093.jpg", alt: "Black with Metropolis Crossdye" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg', alt: 'bra' },
+                images: [
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/09/0a/090a39f0628a4221a88ac02c64105ee7/V504636_OM_F.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/cc/87/cc87cc3d818248b49ff908cf08fd7b56/V504636_OM_B.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/d9/34/d934f9c2a3564b3184d459e9a1b92820/V504636_OF_F.jpg',
+                        alt: 'bra'
+                    },
+                ],
                 rating: 4.3,
-                quantity: 1,
+                quantity: 10,
                 reviews: 240
             },
             {
@@ -2915,13 +3103,66 @@ module.exports = function () {
                 categories: ['bras', 'perfect-coverage'],
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/072_H17_BRA_058_EH_103_e5699289.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", alt: "Burnished Lilac Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/37/ec/37ec4248a69d49d583adb0daa45fbcaa/V505523_2C2_SW.jpg", alt: "Winter Lake Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/76/fa/76facd57125e458eac2b13a055d91a44/V505733_CPH_SW.jpg", alt: "Nile Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9b/4a/9b4a785a845b416e9027354e011420e6/V505854_S62_SW.jpg", alt: "Vintage Rose Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8c/df/8cdf11974871408fb19afe3572d70a42/V504843_CDS_SW.jpg", alt: "Desire Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8d/74/8d74333d05144cbf99dd35deca2e2944/V504688_5HR_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/2a/7d/2a7dcc2dc276477bbbda0d9e29be7f77/V504687_204_SW.jpg", alt: "Black Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/ab/48/ab487b9744594885bfb4b131b32184b7/V502262_15G_SW.jpg", alt: "Coconut White Allover Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/29/45/2945e0d12d8b40d88a84062c4b28655c/V502233_3TW_SW.jpg", alt: "Black Allover Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a7/3e/a73e96b4f01f475ea75f7374c2db08b4/V497031_093_SW.jpg", alt: "Black with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/65/96/659681e5e727404391d76f20fa3e94e0/V497032_3CA_SW.jpg", alt: "Metropolis with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4d/bd/4dbd30a4e67e41b8aee660877f573368/V497006_BTA_SW.jpg", alt: "Sassafras with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/cf/b0/cfb0588a31434b9192e77568e317c49b/V505872_BWJ_SW.jpg", alt: "Desire with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/2d/14/2d1429e7859941119ce86f61897ea616/V496974_7V7_SW.jpg", alt: "Dark Iron with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/13/a3/13a30141acab445dac623df3841c5ae4/V505667_3DQ_SW.jpg", alt: "Dark and Stormy with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/83/2f/832faa75fccd4c548d894c801f4b1895/V504412_BTC_SW.jpg", alt: "Festive Green with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dd/2e/dd2e74ac10e4477b8a79ec4f739c95d8/V498500_BSZ_SW.jpg", alt: "Wood Rose with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/da/a3/daa3d612068c4441b6db9bfac893fbcf/V505578_S38_SW.jpg", alt: "Powder Blush with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/e2/a1/e2a175d0d35740a2a6f4b07588c08954/V497023_9TX_SW.jpg", alt: "Pink Ivory with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/c1/c5/c1c529d16f474fbc951f20dbd286a36c/V497045_9E2_SW.jpg", alt: "Coconut White with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479635_A56_SW.jpg", alt: "Black Rebel Crochet Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480790_68N_SW.jpg", alt: "Angel Pink Rebel Crochet Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/25/d2/25d24c8431bd43e0bf2b189b37f6f604/V500937_4AX_SW.jpg", alt: "Sweet Amaretto with Mesh Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/33/33/3333539c77e94f76b56b8561010e6b62/V501120_BTF_SW.jpg", alt: "Blue Haze with Mesh Trim" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V870534_DK9.jpg", alt: "White" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f7/34/f734bb3d7a8445a5889442acff089483/V491073_H38_SW.jpg", alt: "Sheer Pink" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480817_M58_SW.jpg", alt: "Champagne" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479616_DJ5_SW.jpg", alt: "Almost Nude" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479615_B5D_SW.jpg", alt: "Silver Pewter" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480816_9CY_SW.jpg", alt: "Rosy Mauve" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d6/f6/d6f6613aa1774f17b29c1a7e5354d007/V504735_79E_SW.jpg", alt: "Vibrant Red" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/73/5b/735b9bc053094fc5b48575237767f968/V504420_BUF_SW.jpg", alt: "Pink Plum" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/83/42/8342f45b0a42449bb188aa3ddb6eeaa2/V498524_3JT_SW.jpg", alt: "Classic Navy" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d3/f0/d3f005a864454f068e09761162b0a96b/V499572_BPV_SW.jpg", alt: "Kir" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479618_DL3_SW.jpg", alt: "Black" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/3c/fd/3cfd07d4dbc24055abae6fe6b1e14ebf/082_H17_BRA_057_EH_105_e5699122.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/3c/fd/3cfd07d4dbc24055abae6fe6b1e14ebf/082_H17_BRA_057_EH_105_e5699122.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/85/09/850930c2e06047d9a23ac17e1a75809a/V504843_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/94/1f/941f446860604444bee6c7954e37928f/V504843_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/9a/1c/9a1cb1c2bc8841baab6f72ca0568c23d/V504843_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.4,
-                quantity: 1,
+                quantity: 7,
                 reviews: 845
             },
             {
@@ -2931,13 +3172,36 @@ module.exports = function () {
                 categories: ['bras', 'balconet'],
                 price: 958.53,
                 link: '/bras/balconet',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", alt: "White with Shell Pink Crossdye" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/3f/3d/3f3d782ce11a40ba99aaf3893ffcebbf/V500110_BPU_SW.jpg", alt: "Kir Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/67/2467d9057ff24b7ab379e6a3f475d83a/V504699_CQN_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", alt: "Evening Blush with Pinky Cheeks Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V847290_DL3.jpg", alt: "Black with Metropolis Crossdye" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/6e/a0/6ea0b6063133473db2593c9da6a76c66/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/6e/a0/6ea0b6063133473db2593c9da6a76c66/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/56/5a/565a55fab5cd42e9aac4491e0e549fae/V500110_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/d9/f2/d9f2caebd2944a3c8d60a943abf45268/V500110_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/aa/be/aabe75e9896f44a8a5a51150181da5aa/V500110_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.5,
-                quantity: 1,
+                quantity: 9,
                 reviews: 565
             },
             {
@@ -2947,13 +3211,40 @@ module.exports = function () {
                 categories: ['bras', 'strapless'],
                 price: 1541.99,
                 link: '/bras/strapless',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", alt: "Wood Rose with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479586_DK9_SW.jpg", alt: "White" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dc/86/dc867b0af770493284fbf087c5eda248/V496915_9TX_SW.jpg", alt: "Pink Ivory" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479585_DJ5_SW.jpg", alt: "Almost Nude" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dd/60/dd6046b0fb5c42829217be934d7afb83/V505798_S62_SW.jpg", alt: "Vintage Rose" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/60/65/6065eeb3b3964466be6cbfc0e0e8da29/V504684_072_SW.jpg", alt: "Grey Oasis" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d7/19/d719d97ac9cf487aa16747f567059f5f/V503712_7V7_SW.jpg", alt: "Dark Iron" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9a/75/9a75058c402c4ec4a2237a186edb2f87/V503686_4AX_SW.jpg", alt: "Sweet Amaretto" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479587_DL3_SW.jpg", alt: "Black" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/47/1e/471e18449c45442191c56492b92bca35/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/47/1e/471e18449c45442191c56492b92bca35/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/44/88/4488c850179b4a30aa0506617f14befd/V496915_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/6c/76/6c76e1639bce4a92b005e0df4b126ff5/V496915_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/bf/e1/bfe1049c691e45d6903decc5a395ef91/V496915_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.3,
-                quantity: 1,
+                quantity: 5,
                 reviews: 283
             },
             {
@@ -2963,13 +3254,64 @@ module.exports = function () {
                 categories: ['bras', 'demi'],
                 price: 1736.48,
                 link: '/bras/demi',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", alt: "Black with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/46/50/4650f07345e948a394c77848bfd36ab4/V505878_S62_SW.jpg", alt: "Vintage Rose with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/98/bb/98bb40748f2e44a8abaffbc2d68bb4c2/V505781_CTQ_SW.jpg", alt: "Pastel Blue with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a2/c9/a2c97fcf4d044cbb84bec282fadfd293/V504802_CQM_SW.jpg", alt: "Gold Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/99/cd/99cda39134af43c6943c687d2dc46c60/V504779_CQN_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/20/4c/204c5ff2d51644c183e5e385012a1d20/V505697_CQP_SW.jpg", alt: "Antique Lavender with Rose Gold Foil" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/93/87/93878a9ac32f4b31b52cbaad8af6cc35/V506988_CYA_SW.jpg", alt: "Pink Ivory with White Gold Foil" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V859360_DK9.jpg", alt: "Ivory with Silver Foil" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7b/85/7b85474fcd09489c9b093190699b5ed6/V508246_BVM_SW.jpg", alt: "Black Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/ba/84/ba844794c88946608e895cc9416241d5/V504912_BVN_SW.jpg", alt: "Black Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/84/2484f9e80d374592b013f70c00ea1b50/V497025_BPU_SW.jpg", alt: "Kir Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/36/6a/366afd17534e4be599b08ea7d639e3f3/V504636_BWJ_SW.jpg", alt: "Desire with Evening Blush" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/5c/e5/5ce5c79c797e4d8fb3af731f75165223/V504932_CFT_SW.jpg", alt: "Festive Green with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/19/2a/192ad085746f417dbde9b308a722d6b8/V504113_CFU_SW.jpg", alt: "Heirloom Lilac with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/38/a7/38a7658ce638468bbcd5a473f103eebf/V504149_CFS_SW.jpg", alt: "Coconut White with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8a/68/8a6858911ce14eab85cd11c98244f4fd/V507817_BVK_SW.jpg", alt: "Black Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/e1/6b/e16b87fa38324e9eaadb698635dbb069/V504204_BPV_SW.jpg", alt: "Kir With Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V878493_DK9.jpg", alt: "White with Shell Pink Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", alt: "Evening Blush with Pinky Cheeks Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/VS_P_SMBOD_BLK_093.jpg", alt: "Black with Metropolis Crossdye" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg', alt: 'bra' },
+                images: [
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/09/0a/090a39f0628a4221a88ac02c64105ee7/V504636_OM_F.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/cc/87/cc87cc3d818248b49ff908cf08fd7b56/V504636_OM_B.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/d9/34/d934f9c2a3564b3184d459e9a1b92820/V504636_OF_F.jpg',
+                        alt: 'bra'
+                    },
+                ],
                 rating: 4.3,
-                quantity: 1,
+                quantity: 10,
                 reviews: 240
             },
             {
@@ -2979,13 +3321,66 @@ module.exports = function () {
                 categories: ['bras', 'perfect-coverage'],
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", alt: "Burnished Lilac Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/37/ec/37ec4248a69d49d583adb0daa45fbcaa/V505523_2C2_SW.jpg", alt: "Winter Lake Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/76/fa/76facd57125e458eac2b13a055d91a44/V505733_CPH_SW.jpg", alt: "Nile Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9b/4a/9b4a785a845b416e9027354e011420e6/V505854_S62_SW.jpg", alt: "Vintage Rose Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8c/df/8cdf11974871408fb19afe3572d70a42/V504843_CDS_SW.jpg", alt: "Desire Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8d/74/8d74333d05144cbf99dd35deca2e2944/V504688_5HR_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/2a/7d/2a7dcc2dc276477bbbda0d9e29be7f77/V504687_204_SW.jpg", alt: "Black Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/ab/48/ab487b9744594885bfb4b131b32184b7/V502262_15G_SW.jpg", alt: "Coconut White Allover Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/29/45/2945e0d12d8b40d88a84062c4b28655c/V502233_3TW_SW.jpg", alt: "Black Allover Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a7/3e/a73e96b4f01f475ea75f7374c2db08b4/V497031_093_SW.jpg", alt: "Black with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/65/96/659681e5e727404391d76f20fa3e94e0/V497032_3CA_SW.jpg", alt: "Metropolis with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4d/bd/4dbd30a4e67e41b8aee660877f573368/V497006_BTA_SW.jpg", alt: "Sassafras with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/cf/b0/cfb0588a31434b9192e77568e317c49b/V505872_BWJ_SW.jpg", alt: "Desire with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/2d/14/2d1429e7859941119ce86f61897ea616/V496974_7V7_SW.jpg", alt: "Dark Iron with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/13/a3/13a30141acab445dac623df3841c5ae4/V505667_3DQ_SW.jpg", alt: "Dark and Stormy with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/83/2f/832faa75fccd4c548d894c801f4b1895/V504412_BTC_SW.jpg", alt: "Festive Green with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dd/2e/dd2e74ac10e4477b8a79ec4f739c95d8/V498500_BSZ_SW.jpg", alt: "Wood Rose with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/da/a3/daa3d612068c4441b6db9bfac893fbcf/V505578_S38_SW.jpg", alt: "Powder Blush with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/e2/a1/e2a175d0d35740a2a6f4b07588c08954/V497023_9TX_SW.jpg", alt: "Pink Ivory with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/c1/c5/c1c529d16f474fbc951f20dbd286a36c/V497045_9E2_SW.jpg", alt: "Coconut White with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479635_A56_SW.jpg", alt: "Black Rebel Crochet Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480790_68N_SW.jpg", alt: "Angel Pink Rebel Crochet Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/25/d2/25d24c8431bd43e0bf2b189b37f6f604/V500937_4AX_SW.jpg", alt: "Sweet Amaretto with Mesh Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/33/33/3333539c77e94f76b56b8561010e6b62/V501120_BTF_SW.jpg", alt: "Blue Haze with Mesh Trim" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V870534_DK9.jpg", alt: "White" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f7/34/f734bb3d7a8445a5889442acff089483/V491073_H38_SW.jpg", alt: "Sheer Pink" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480817_M58_SW.jpg", alt: "Champagne" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479616_DJ5_SW.jpg", alt: "Almost Nude" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479615_B5D_SW.jpg", alt: "Silver Pewter" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480816_9CY_SW.jpg", alt: "Rosy Mauve" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d6/f6/d6f6613aa1774f17b29c1a7e5354d007/V504735_79E_SW.jpg", alt: "Vibrant Red" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/73/5b/735b9bc053094fc5b48575237767f968/V504420_BUF_SW.jpg", alt: "Pink Plum" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/83/42/8342f45b0a42449bb188aa3ddb6eeaa2/V498524_3JT_SW.jpg", alt: "Classic Navy" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d3/f0/d3f005a864454f068e09761162b0a96b/V499572_BPV_SW.jpg", alt: "Kir" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479618_DL3_SW.jpg", alt: "Black" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/3c/fd/3cfd07d4dbc24055abae6fe6b1e14ebf/082_H17_BRA_057_EH_105_e5699122.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/3c/fd/3cfd07d4dbc24055abae6fe6b1e14ebf/082_H17_BRA_057_EH_105_e5699122.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/85/09/850930c2e06047d9a23ac17e1a75809a/V504843_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/94/1f/941f446860604444bee6c7954e37928f/V504843_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/9a/1c/9a1cb1c2bc8841baab6f72ca0568c23d/V504843_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.4,
-                quantity: 1,
+                quantity: 7,
                 reviews: 845
             },
             {
@@ -2995,13 +3390,36 @@ module.exports = function () {
                 categories: ['bras', 'balconet'],
                 price: 958.53,
                 link: '/bras/balconet',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", alt: "White with Shell Pink Crossdye" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/3f/3d/3f3d782ce11a40ba99aaf3893ffcebbf/V500110_BPU_SW.jpg", alt: "Kir Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/67/2467d9057ff24b7ab379e6a3f475d83a/V504699_CQN_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", alt: "Evening Blush with Pinky Cheeks Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V847290_DL3.jpg", alt: "Black with Metropolis Crossdye" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/6e/a0/6ea0b6063133473db2593c9da6a76c66/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/6e/a0/6ea0b6063133473db2593c9da6a76c66/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/56/5a/565a55fab5cd42e9aac4491e0e549fae/V500110_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/d9/f2/d9f2caebd2944a3c8d60a943abf45268/V500110_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/aa/be/aabe75e9896f44a8a5a51150181da5aa/V500110_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.5,
-                quantity: 1,
+                quantity: 9,
                 reviews: 565
             },
             {
@@ -3011,13 +3429,40 @@ module.exports = function () {
                 categories: ['bras', 'strapless'],
                 price: 1541.99,
                 link: '/bras/strapless',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", alt: "Wood Rose with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479586_DK9_SW.jpg", alt: "White" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dc/86/dc867b0af770493284fbf087c5eda248/V496915_9TX_SW.jpg", alt: "Pink Ivory" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479585_DJ5_SW.jpg", alt: "Almost Nude" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dd/60/dd6046b0fb5c42829217be934d7afb83/V505798_S62_SW.jpg", alt: "Vintage Rose" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/60/65/6065eeb3b3964466be6cbfc0e0e8da29/V504684_072_SW.jpg", alt: "Grey Oasis" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d7/19/d719d97ac9cf487aa16747f567059f5f/V503712_7V7_SW.jpg", alt: "Dark Iron" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9a/75/9a75058c402c4ec4a2237a186edb2f87/V503686_4AX_SW.jpg", alt: "Sweet Amaretto" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479587_DL3_SW.jpg", alt: "Black" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/47/1e/471e18449c45442191c56492b92bca35/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/47/1e/471e18449c45442191c56492b92bca35/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/44/88/4488c850179b4a30aa0506617f14befd/V496915_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/6c/76/6c76e1639bce4a92b005e0df4b126ff5/V496915_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/bf/e1/bfe1049c691e45d6903decc5a395ef91/V496915_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.3,
-                quantity: 1,
+                quantity: 5,
                 reviews: 283
             },
             {
@@ -3027,13 +3472,64 @@ module.exports = function () {
                 categories: ['bras', 'demi'],
                 price: 1736.48,
                 link: '/bras/demi',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", alt: "Black with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/46/50/4650f07345e948a394c77848bfd36ab4/V505878_S62_SW.jpg", alt: "Vintage Rose with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/98/bb/98bb40748f2e44a8abaffbc2d68bb4c2/V505781_CTQ_SW.jpg", alt: "Pastel Blue with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a2/c9/a2c97fcf4d044cbb84bec282fadfd293/V504802_CQM_SW.jpg", alt: "Gold Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/99/cd/99cda39134af43c6943c687d2dc46c60/V504779_CQN_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/20/4c/204c5ff2d51644c183e5e385012a1d20/V505697_CQP_SW.jpg", alt: "Antique Lavender with Rose Gold Foil" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/93/87/93878a9ac32f4b31b52cbaad8af6cc35/V506988_CYA_SW.jpg", alt: "Pink Ivory with White Gold Foil" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V859360_DK9.jpg", alt: "Ivory with Silver Foil" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7b/85/7b85474fcd09489c9b093190699b5ed6/V508246_BVM_SW.jpg", alt: "Black Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/ba/84/ba844794c88946608e895cc9416241d5/V504912_BVN_SW.jpg", alt: "Black Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/84/2484f9e80d374592b013f70c00ea1b50/V497025_BPU_SW.jpg", alt: "Kir Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/36/6a/366afd17534e4be599b08ea7d639e3f3/V504636_BWJ_SW.jpg", alt: "Desire with Evening Blush" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/5c/e5/5ce5c79c797e4d8fb3af731f75165223/V504932_CFT_SW.jpg", alt: "Festive Green with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/19/2a/192ad085746f417dbde9b308a722d6b8/V504113_CFU_SW.jpg", alt: "Heirloom Lilac with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/38/a7/38a7658ce638468bbcd5a473f103eebf/V504149_CFS_SW.jpg", alt: "Coconut White with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8a/68/8a6858911ce14eab85cd11c98244f4fd/V507817_BVK_SW.jpg", alt: "Black Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/e1/6b/e16b87fa38324e9eaadb698635dbb069/V504204_BPV_SW.jpg", alt: "Kir With Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V878493_DK9.jpg", alt: "White with Shell Pink Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", alt: "Evening Blush with Pinky Cheeks Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/VS_P_SMBOD_BLK_093.jpg", alt: "Black with Metropolis Crossdye" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg', alt: 'bra' },
+                images: [
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/09/0a/090a39f0628a4221a88ac02c64105ee7/V504636_OM_F.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/cc/87/cc87cc3d818248b49ff908cf08fd7b56/V504636_OM_B.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/d9/34/d934f9c2a3564b3184d459e9a1b92820/V504636_OF_F.jpg',
+                        alt: 'bra'
+                    },
+                ],
                 rating: 4.3,
-                quantity: 1,
+                quantity: 10,
                 reviews: 240
             },
             {
@@ -3043,13 +3539,66 @@ module.exports = function () {
                 categories: ['bras', 'perfect-coverage'],
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", alt: "Burnished Lilac Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/37/ec/37ec4248a69d49d583adb0daa45fbcaa/V505523_2C2_SW.jpg", alt: "Winter Lake Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/76/fa/76facd57125e458eac2b13a055d91a44/V505733_CPH_SW.jpg", alt: "Nile Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9b/4a/9b4a785a845b416e9027354e011420e6/V505854_S62_SW.jpg", alt: "Vintage Rose Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8c/df/8cdf11974871408fb19afe3572d70a42/V504843_CDS_SW.jpg", alt: "Desire Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8d/74/8d74333d05144cbf99dd35deca2e2944/V504688_5HR_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/2a/7d/2a7dcc2dc276477bbbda0d9e29be7f77/V504687_204_SW.jpg", alt: "Black Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/ab/48/ab487b9744594885bfb4b131b32184b7/V502262_15G_SW.jpg", alt: "Coconut White Allover Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/29/45/2945e0d12d8b40d88a84062c4b28655c/V502233_3TW_SW.jpg", alt: "Black Allover Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a7/3e/a73e96b4f01f475ea75f7374c2db08b4/V497031_093_SW.jpg", alt: "Black with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/65/96/659681e5e727404391d76f20fa3e94e0/V497032_3CA_SW.jpg", alt: "Metropolis with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4d/bd/4dbd30a4e67e41b8aee660877f573368/V497006_BTA_SW.jpg", alt: "Sassafras with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/cf/b0/cfb0588a31434b9192e77568e317c49b/V505872_BWJ_SW.jpg", alt: "Desire with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/2d/14/2d1429e7859941119ce86f61897ea616/V496974_7V7_SW.jpg", alt: "Dark Iron with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/13/a3/13a30141acab445dac623df3841c5ae4/V505667_3DQ_SW.jpg", alt: "Dark and Stormy with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/83/2f/832faa75fccd4c548d894c801f4b1895/V504412_BTC_SW.jpg", alt: "Festive Green with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dd/2e/dd2e74ac10e4477b8a79ec4f739c95d8/V498500_BSZ_SW.jpg", alt: "Wood Rose with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/da/a3/daa3d612068c4441b6db9bfac893fbcf/V505578_S38_SW.jpg", alt: "Powder Blush with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/e2/a1/e2a175d0d35740a2a6f4b07588c08954/V497023_9TX_SW.jpg", alt: "Pink Ivory with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/c1/c5/c1c529d16f474fbc951f20dbd286a36c/V497045_9E2_SW.jpg", alt: "Coconut White with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479635_A56_SW.jpg", alt: "Black Rebel Crochet Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480790_68N_SW.jpg", alt: "Angel Pink Rebel Crochet Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/25/d2/25d24c8431bd43e0bf2b189b37f6f604/V500937_4AX_SW.jpg", alt: "Sweet Amaretto with Mesh Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/33/33/3333539c77e94f76b56b8561010e6b62/V501120_BTF_SW.jpg", alt: "Blue Haze with Mesh Trim" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V870534_DK9.jpg", alt: "White" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f7/34/f734bb3d7a8445a5889442acff089483/V491073_H38_SW.jpg", alt: "Sheer Pink" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480817_M58_SW.jpg", alt: "Champagne" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479616_DJ5_SW.jpg", alt: "Almost Nude" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479615_B5D_SW.jpg", alt: "Silver Pewter" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480816_9CY_SW.jpg", alt: "Rosy Mauve" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d6/f6/d6f6613aa1774f17b29c1a7e5354d007/V504735_79E_SW.jpg", alt: "Vibrant Red" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/73/5b/735b9bc053094fc5b48575237767f968/V504420_BUF_SW.jpg", alt: "Pink Plum" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/83/42/8342f45b0a42449bb188aa3ddb6eeaa2/V498524_3JT_SW.jpg", alt: "Classic Navy" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d3/f0/d3f005a864454f068e09761162b0a96b/V499572_BPV_SW.jpg", alt: "Kir" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479618_DL3_SW.jpg", alt: "Black" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/3c/fd/3cfd07d4dbc24055abae6fe6b1e14ebf/082_H17_BRA_057_EH_105_e5699122.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/3c/fd/3cfd07d4dbc24055abae6fe6b1e14ebf/082_H17_BRA_057_EH_105_e5699122.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/85/09/850930c2e06047d9a23ac17e1a75809a/V504843_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/94/1f/941f446860604444bee6c7954e37928f/V504843_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/9a/1c/9a1cb1c2bc8841baab6f72ca0568c23d/V504843_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.4,
-                quantity: 1,
+                quantity: 9,
                 reviews: 845
             },
             {
@@ -3059,13 +3608,36 @@ module.exports = function () {
                 categories: ['bras', 'balconet'],
                 price: 958.53,
                 link: '/bras/balconet',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", alt: "White with Shell Pink Crossdye" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/3f/3d/3f3d782ce11a40ba99aaf3893ffcebbf/V500110_BPU_SW.jpg", alt: "Kir Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/67/2467d9057ff24b7ab379e6a3f475d83a/V504699_CQN_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", alt: "Evening Blush with Pinky Cheeks Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V847290_DL3.jpg", alt: "Black with Metropolis Crossdye" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/6e/a0/6ea0b6063133473db2593c9da6a76c66/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/6e/a0/6ea0b6063133473db2593c9da6a76c66/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/56/5a/565a55fab5cd42e9aac4491e0e549fae/V500110_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/d9/f2/d9f2caebd2944a3c8d60a943abf45268/V500110_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/aa/be/aabe75e9896f44a8a5a51150181da5aa/V500110_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.5,
-                quantity: 1,
+                quantity: 7,
                 reviews: 565
             },
             {
@@ -3075,13 +3647,40 @@ module.exports = function () {
                 categories: ['bras', 'strapless'],
                 price: 1541.99,
                 link: '/bras/strapless',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", alt: "Wood Rose with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479586_DK9_SW.jpg", alt: "White" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dc/86/dc867b0af770493284fbf087c5eda248/V496915_9TX_SW.jpg", alt: "Pink Ivory" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479585_DJ5_SW.jpg", alt: "Almost Nude" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dd/60/dd6046b0fb5c42829217be934d7afb83/V505798_S62_SW.jpg", alt: "Vintage Rose" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/60/65/6065eeb3b3964466be6cbfc0e0e8da29/V504684_072_SW.jpg", alt: "Grey Oasis" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d7/19/d719d97ac9cf487aa16747f567059f5f/V503712_7V7_SW.jpg", alt: "Dark Iron" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9a/75/9a75058c402c4ec4a2237a186edb2f87/V503686_4AX_SW.jpg", alt: "Sweet Amaretto" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479587_DL3_SW.jpg", alt: "Black" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/47/1e/471e18449c45442191c56492b92bca35/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/47/1e/471e18449c45442191c56492b92bca35/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/44/88/4488c850179b4a30aa0506617f14befd/V496915_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/6c/76/6c76e1639bce4a92b005e0df4b126ff5/V496915_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/bf/e1/bfe1049c691e45d6903decc5a395ef91/V496915_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.3,
-                quantity: 1,
+                quantity: 14,
                 reviews: 283
             },
             {
@@ -3091,13 +3690,64 @@ module.exports = function () {
                 categories: ['bras', 'demi'],
                 price: 1736.48,
                 link: '/bras/demi',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", alt: "Black with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/46/50/4650f07345e948a394c77848bfd36ab4/V505878_S62_SW.jpg", alt: "Vintage Rose with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/98/bb/98bb40748f2e44a8abaffbc2d68bb4c2/V505781_CTQ_SW.jpg", alt: "Pastel Blue with Lace Back" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a2/c9/a2c97fcf4d044cbb84bec282fadfd293/V504802_CQM_SW.jpg", alt: "Gold Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/99/cd/99cda39134af43c6943c687d2dc46c60/V504779_CQN_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/20/4c/204c5ff2d51644c183e5e385012a1d20/V505697_CQP_SW.jpg", alt: "Antique Lavender with Rose Gold Foil" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/93/87/93878a9ac32f4b31b52cbaad8af6cc35/V506988_CYA_SW.jpg", alt: "Pink Ivory with White Gold Foil" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V859360_DK9.jpg", alt: "Ivory with Silver Foil" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7b/85/7b85474fcd09489c9b093190699b5ed6/V508246_BVM_SW.jpg", alt: "Black Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/ba/84/ba844794c88946608e895cc9416241d5/V504912_BVN_SW.jpg", alt: "Black Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/84/2484f9e80d374592b013f70c00ea1b50/V497025_BPU_SW.jpg", alt: "Kir Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/36/6a/366afd17534e4be599b08ea7d639e3f3/V504636_BWJ_SW.jpg", alt: "Desire with Evening Blush" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/5c/e5/5ce5c79c797e4d8fb3af731f75165223/V504932_CFT_SW.jpg", alt: "Festive Green with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/19/2a/192ad085746f417dbde9b308a722d6b8/V504113_CFU_SW.jpg", alt: "Heirloom Lilac with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/38/a7/38a7658ce638468bbcd5a473f103eebf/V504149_CFS_SW.jpg", alt: "Coconut White with Velvet Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8a/68/8a6858911ce14eab85cd11c98244f4fd/V507817_BVK_SW.jpg", alt: "Black Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/e1/6b/e16b87fa38324e9eaadb698635dbb069/V504204_BPV_SW.jpg", alt: "Kir With Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V878493_DK9.jpg", alt: "White with Shell Pink Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", alt: "Evening Blush with Pinky Cheeks Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/VS_P_SMBOD_BLK_093.jpg", alt: "Black with Metropolis Crossdye" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg', alt: 'bra' },
+                images: [
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/b0/94/b0943a5c337f416bb4507840c519d244/058_H17_BRA_073_JT_030_e5699078.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/09/0a/090a39f0628a4221a88ac02c64105ee7/V504636_OM_F.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/cc/87/cc87cc3d818248b49ff908cf08fd7b56/V504636_OM_B.jpg',
+                        alt: 'bra'
+                    },
+                    {
+                        src: 'https://dm.victoriassecret.com/p/404x539/tif/d9/34/d934f9c2a3564b3184d459e9a1b92820/V504636_OF_F.jpg',
+                        alt: 'bra'
+                    },
+                ],
                 rating: 4.3,
-                quantity: 1,
+                quantity: 6,
                 reviews: 240
             },
             {
@@ -3107,13 +3757,66 @@ module.exports = function () {
                 categories: ['bras', 'perfect-coverage'],
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
-                bandSize: [32, 34, 36, 38, 40],
-                cupSize: ['b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                    { title: 40, missCupSize: ['b'] }
+                ],
+                cupSize: [
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", alt: "Burnished Lilac Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/37/ec/37ec4248a69d49d583adb0daa45fbcaa/V505523_2C2_SW.jpg", alt: "Winter Lake Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/76/fa/76facd57125e458eac2b13a055d91a44/V505733_CPH_SW.jpg", alt: "Nile Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9b/4a/9b4a785a845b416e9027354e011420e6/V505854_S62_SW.jpg", alt: "Vintage Rose Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8c/df/8cdf11974871408fb19afe3572d70a42/V504843_CDS_SW.jpg", alt: "Desire Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/8d/74/8d74333d05144cbf99dd35deca2e2944/V504688_5HR_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/2a/7d/2a7dcc2dc276477bbbda0d9e29be7f77/V504687_204_SW.jpg", alt: "Black Shine" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/ab/48/ab487b9744594885bfb4b131b32184b7/V502262_15G_SW.jpg", alt: "Coconut White Allover Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/29/45/2945e0d12d8b40d88a84062c4b28655c/V502233_3TW_SW.jpg", alt: "Black Allover Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a7/3e/a73e96b4f01f475ea75f7374c2db08b4/V497031_093_SW.jpg", alt: "Black with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/65/96/659681e5e727404391d76f20fa3e94e0/V497032_3CA_SW.jpg", alt: "Metropolis with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4d/bd/4dbd30a4e67e41b8aee660877f573368/V497006_BTA_SW.jpg", alt: "Sassafras with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/cf/b0/cfb0588a31434b9192e77568e317c49b/V505872_BWJ_SW.jpg", alt: "Desire with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/2d/14/2d1429e7859941119ce86f61897ea616/V496974_7V7_SW.jpg", alt: "Dark Iron with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/13/a3/13a30141acab445dac623df3841c5ae4/V505667_3DQ_SW.jpg", alt: "Dark and Stormy with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/83/2f/832faa75fccd4c548d894c801f4b1895/V504412_BTC_SW.jpg", alt: "Festive Green with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dd/2e/dd2e74ac10e4477b8a79ec4f739c95d8/V498500_BSZ_SW.jpg", alt: "Wood Rose with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/da/a3/daa3d612068c4441b6db9bfac893fbcf/V505578_S38_SW.jpg", alt: "Powder Blush with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/e2/a1/e2a175d0d35740a2a6f4b07588c08954/V497023_9TX_SW.jpg", alt: "Pink Ivory with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/c1/c5/c1c529d16f474fbc951f20dbd286a36c/V497045_9E2_SW.jpg", alt: "Coconut White with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479635_A56_SW.jpg", alt: "Black Rebel Crochet Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480790_68N_SW.jpg", alt: "Angel Pink Rebel Crochet Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/25/d2/25d24c8431bd43e0bf2b189b37f6f604/V500937_4AX_SW.jpg", alt: "Sweet Amaretto with Mesh Trim" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/33/33/3333539c77e94f76b56b8561010e6b62/V501120_BTF_SW.jpg", alt: "Blue Haze with Mesh Trim" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V870534_DK9.jpg", alt: "White" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f7/34/f734bb3d7a8445a5889442acff089483/V491073_H38_SW.jpg", alt: "Sheer Pink" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480817_M58_SW.jpg", alt: "Champagne" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479616_DJ5_SW.jpg", alt: "Almost Nude" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479615_B5D_SW.jpg", alt: "Silver Pewter" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V480816_9CY_SW.jpg", alt: "Rosy Mauve" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d6/f6/d6f6613aa1774f17b29c1a7e5354d007/V504735_79E_SW.jpg", alt: "Vibrant Red" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/73/5b/735b9bc053094fc5b48575237767f968/V504420_BUF_SW.jpg", alt: "Pink Plum" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/83/42/8342f45b0a42449bb188aa3ddb6eeaa2/V498524_3JT_SW.jpg", alt: "Classic Navy" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d3/f0/d3f005a864454f068e09761162b0a96b/V499572_BPV_SW.jpg", alt: "Kir" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479618_DL3_SW.jpg", alt: "Black" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/3c/fd/3cfd07d4dbc24055abae6fe6b1e14ebf/082_H17_BRA_057_EH_105_e5699122.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/3c/fd/3cfd07d4dbc24055abae6fe6b1e14ebf/082_H17_BRA_057_EH_105_e5699122.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/85/09/850930c2e06047d9a23ac17e1a75809a/V504843_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/94/1f/941f446860604444bee6c7954e37928f/V504843_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/9a/1c/9a1cb1c2bc8841baab6f72ca0568c23d/V504843_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.4,
-                quantity: 1,
+                quantity: 13,
                 reviews: 845
             },
             {
@@ -3123,13 +3826,36 @@ module.exports = function () {
                 categories: ['bras', 'balconet'],
                 price: 958.53,
                 link: '/bras/balconet',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 },
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", alt: "White with Shell Pink Crossdye" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/3f/3d/3f3d782ce11a40ba99aaf3893ffcebbf/V500110_BPU_SW.jpg", alt: "Kir Retro Romance Lace" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/67/2467d9057ff24b7ab379e6a3f475d83a/V504699_CQN_SW.jpg", alt: "Black Pearl Shine" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", alt: "Evening Blush with Pinky Cheeks Crossdye" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V847290_DL3.jpg", alt: "Black with Metropolis Crossdye" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/6e/a0/6ea0b6063133473db2593c9da6a76c66/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/6e/a0/6ea0b6063133473db2593c9da6a76c66/060_F17_BRA_062_EH_057_e5257238.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/56/5a/565a55fab5cd42e9aac4491e0e549fae/V500110_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/d9/f2/d9f2caebd2944a3c8d60a943abf45268/V500110_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/aa/be/aabe75e9896f44a8a5a51150181da5aa/V500110_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.5,
-                quantity: 1,
+                quantity: 20,
                 reviews: 565
             },
             {
@@ -3139,16 +3865,42 @@ module.exports = function () {
                 categories: ['bras', 'strapless'],
                 price: 1541.99,
                 link: '/bras/strapless',
-                bandSize: [32, 34, 36, 38],
-                cupSize: ['a', 'b', 'c', 'd', 'dd', 'ddd'],
-                color: ['Black with Lace Back', 'Vintage Rose with Lace Back', 'Pastel Blue with Lace Back'],
-                titleImage: { src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
-                images: [{ src: '../../assets/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' }, { src: '../../assets/064_H17_BRA_072_JT_030_e5699631.jpg', alt: 'bra' },],
+                bandSize: [
+                    { title: 32 },
+                    { title: 34 },
+                    { title: 36, missColors: ['Black with Lace Back'] },
+                    { title: 38 }
+                ],
+                cupSize: [
+                    { title: 'a' },
+                    { title: 'b' },
+                    { title: 'c' },
+                    { title: 'd' },
+                    { title: 'dd' },
+                    { title: 'ddd', missBandSize: [32], missColors: ['Black with Lace Back'] }
+                ],
+                colors: [
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", alt: "Wood Rose with Rebel Lace" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479586_DK9_SW.jpg", alt: "White" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dc/86/dc867b0af770493284fbf087c5eda248/V496915_9TX_SW.jpg", alt: "Pink Ivory" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479585_DJ5_SW.jpg", alt: "Almost Nude" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dd/60/dd6046b0fb5c42829217be934d7afb83/V505798_S62_SW.jpg", alt: "Vintage Rose" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/60/65/6065eeb3b3964466be6cbfc0e0e8da29/V504684_072_SW.jpg", alt: "Grey Oasis" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/d7/19/d719d97ac9cf487aa16747f567059f5f/V503712_7V7_SW.jpg", alt: "Dark Iron" },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9a/75/9a75058c402c4ec4a2237a186edb2f87/V503686_4AX_SW.jpg", alt: "Sweet Amaretto" },
+                    { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479587_DL3_SW.jpg", alt: "Black" }
+                ],
+                titleImage: { src: 'https://dm.victoriassecret.com/p/404x539/tif/47/1e/471e18449c45442191c56492b92bca35/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
+                images: [
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/47/1e/471e18449c45442191c56492b92bca35/038_F17_BRA_093_JS_070_e5297751.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/44/88/4488c850179b4a30aa0506617f14befd/V496915_OM_F.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/6c/76/6c76e1639bce4a92b005e0df4b126ff5/V496915_OM_B.jpg', alt: 'bra' },
+                    { src: 'https://dm.victoriassecret.com/p/404x539/tif/bf/e1/bfe1049c691e45d6903decc5a395ef91/V496915_OF_F.jpg', alt: 'bra' },
+                ],
                 rating: 4.3,
-                quantity: 1,
+                quantity: 15,
                 reviews: 283
             },
-
         ]
     }
 }

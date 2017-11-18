@@ -5,14 +5,20 @@ import { HttpEvent, HttpInterceptor, HttpRequest, HttpHandler } from '@angular/c
 @Injectable()
 export class TokenInteceptor implements HttpInterceptor {
 
-    constructor(private _injector: Injector) {}
+    constructor(private _injector: Injector) { }
 
     intercept(req: HttpRequest<any>, next: HttpHandler) {
+        console.log('interceptor');
         if (req.method === 'PUT' || req.method === 'DELETE' || req.method === 'POST') {
+            console.log('interceptor2');
             const restData = this._injector.get(RestDataService);
-            const reqClone = req.clone({headers: req.headers.set('Authorization', restData.authToken)});
+            req = req.clone({
+                setHeaders: {
+                    'Authorization': restData.authToken
+                }
+            });
 
-            return next.handle(reqClone);
+            return next.handle(req);
         }
         return next.handle(req);
     }

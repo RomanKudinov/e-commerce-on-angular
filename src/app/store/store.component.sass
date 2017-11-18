@@ -12,19 +12,6 @@ ul
                 display: block
             button
                 position: absolute
-                &.heart
-                    right: 0
-                    width: 44px
-                    height: 44px
-                    background-color: transparent
-                    border: none
-                    &:hover .icon
-                        cursor: pointer
-                        color: #ef5f96
-                    .icon
-                        width: 100%
-                        font-size: 24px
-                        color: rgba(44,44,44,0.35)
                 &.quick-view-btn
                     display: none
                     position: absolute
@@ -53,6 +40,24 @@ ul
                             em
                                 color: #d91560
                                 font-style: normal
-                        
-
-
+        .product-rating
+            .stars-wrap
+                    display: block
+                    position: relative
+                    box-sizing: content-box
+                    width: 70px
+                    height: 22px
+                    margin: 0 auto
+                    .rating
+                        position: absolute
+                        top: 24%
+                        left: 0
+                        background-image: url(../../assets/Rating-Christgau-two-star-honorable-mention.png)
+                        background-size: 70px 12px
+                        background-repeat: no-repeat
+                        width: 70px
+                        height: 12px
+                    .full-stars
+                        opacity: 0.3
+                    .rating-stars
+                        opacity: 1
