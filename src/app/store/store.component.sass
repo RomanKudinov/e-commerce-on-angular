@@ -1,10 +1,10 @@
-ul
+.store
     list-style: none
     padding: 0
     display: flex
     justify-content: space-between
     flex-wrap: wrap
-    li
+    &>li
         margin-bottom: 20px
         div
             position: relative
@@ -16,48 +16,55 @@ ul
                     display: none
                     position: absolute
                     width: 80%
-                    bottom: 25%
+                    bottom: 23%
                     left: 10%
-                    font-size: 18px
+                    font-size: 18 / 11 * 1em
                     text-transform: uppercase
                     font-family: 'Oswald', sans-serif
                     letter-spacing: .15em
+                    padding: 5px 26px 3px
+                    background-color: #fff
+                    border: 1px solid #000
                     &:hover
                         border-color: #ef5f96
                         cursor: pointer
             a
-                text-decoration: none
                 aside
                     text-align: center
                     color: #000
-                    font-size: 13px
-                    .product
-                        &-name
-                            h3
-                                letter-spacing: 0.04em
-                                font-weight: normal
-                        &-price
-                            em
-                                color: #d91560
-                                font-style: normal
-        .product-rating
-            .stars-wrap
-                    display: block
-                    position: relative
-                    box-sizing: content-box
-                    width: 70px
-                    height: 22px
-                    margin: 0 auto
-                    .rating
-                        position: absolute
-                        top: 24%
-                        left: 0
-                        background-image: url(../../assets/Rating-Christgau-two-star-honorable-mention.png)
-                        background-size: 70px 12px
-                        background-repeat: no-repeat
-                        width: 70px
-                        height: 12px
-                    .full-stars
-                        opacity: 0.3
-                    .rating-stars
-                        opacity: 1
+                    font-size: 13 / 11 * 1em
+                    margin-top: 10px
+                    ul
+                        li
+                            margin-bottom: 5px
+                        .product
+                            &-name
+                                h3
+                                    letter-spacing: 0.04em
+                                    font-weight: normal
+                            &-price
+                                em
+                                    color: #d91560
+                                    font-style: normal
+                            &-rating
+                                .stars-wrap
+                                        display: block
+                                        position: relative
+                                        box-sizing: content-box
+                                        width: 70px
+                                        height: 12px
+                                        margin: 0 auto
+                                        .rating
+                                            position: absolute
+                                            left: 0
+                                            background-image: url(../../assets/Rating-Christgau-two-star-honorable-mention.png)
+                                            background-size: 70px 12px
+                                            background-repeat: no-repeat
+                                            width: 70px
+                                            height: 12px
+                                        .full-stars
+                                            opacity: 0.3
+                                        .rating-stars
+                                            opacity: 1
+                            &-option
+                                font-style: italic

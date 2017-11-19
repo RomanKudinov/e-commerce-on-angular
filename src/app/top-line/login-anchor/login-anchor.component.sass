@@ -1,19 +1,24 @@
+$accent: #d91560
+
 \:host
-    padding: 10px 15px
+    padding: (10 / 1180 * 100%) (15 / 1180 * 100%)
+    position: relative
+    display: flex
     &:hover
         background-color: #000
     &:hover button
         background-color: #000
 button
     padding: 0
+    border: 0
+    font-size: 1em
     background-color: #232323
-    border: none
     &:hover
         cursor: pointer
     &:focus
         outline: none
     .icon
-        font-size: 17px
+        font-size: 17 / 11 * 1em
         color: #fff
 .popup
     position: absolute
@@ -24,17 +29,15 @@ button
     display: flex
     flex-direction: column
     justify-content: space-around
-    padding: 15px 30px
-    font-size: 11px
-    font-weight: 400
+    padding: (15 / 40 * 100%) (30 / 40 * 100%)
     background-color: #fff
     z-index: 2
     a
         text-decoration: none
-        margin-bottom: 15px
+        margin-bottom: (15 / 40 * 100%)
         text-align: center
         color: gray
         &:hover
-            color: #d91560
+            color: $accent
         &:last-child
             margin-bottom: 0

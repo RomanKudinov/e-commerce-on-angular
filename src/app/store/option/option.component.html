@@ -1,0 +1,8 @@
+<ng-content></ng-content>
+<ng-container *ngIf="state">
+    <div class="popup">
+        <img [src]="image.src" [alt]="image.alt">
+        <h4>{{image.alt}}</h4>
+        <span>Click to view photo</span>
+    </div>
+</ng-container>

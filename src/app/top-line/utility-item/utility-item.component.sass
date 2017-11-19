@@ -1,11 +1,13 @@
+$bgc-host: #000
+
 \:host
     padding: 0 5px
     display: flex
     margin-left: 25px
     &:hover
-        background-color: #000
+        background-color: $bgc-host
     &:hover button
-        background-color: #000
+        background-color: $bgc-host
 .item-wrap
     display: flex
     align-items: center
@@ -13,11 +15,11 @@
         padding: 5px
         background-color: #232323
         border: none
+
         &:hover
             cursor: pointer
         &:focus
             outline: none
     span
         color: #fff
-        font-size: 11px
         margin-left: 3px

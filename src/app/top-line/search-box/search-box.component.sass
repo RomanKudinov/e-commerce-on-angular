@@ -3,12 +3,11 @@
     display: flex
     &.active
         border-bottom: 2px solid black
-.form-wrap
+.search
     display: flex
-    padding: 0 5px
     height: 70%
     button
-        padding: 5px
+        padding: 2px 5px 2px
         background-color: #232323
         border: none
         &:hover
@@ -21,16 +20,17 @@
             transform: translateY(-100%)
             opacity: 0
             border: 0
-            height: 30px
+            height: 100%
             color: #fff
             outline: 0
-            font-size: 15px
+            font-size: 17 / 11 * 1em
             width: 150px
             background-color: #232323
+            font-size: 1em
             &::-webkit-search-cancel-button
                 opacity: 0
                 pointer-events: none
             &::-webkit-input-placeholder
                 letter-spacing: .02em
-                font-size: 14px
+                font-size: 14 / 11 * 1em
                 color: #fff

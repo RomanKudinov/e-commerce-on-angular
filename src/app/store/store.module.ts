@@ -5,6 +5,7 @@ import { StoreRoutingModule } from './store-routing.module';
 import { StoreComponent } from './store.component';
 import { ProductComponent } from './product/product.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awesome';
+import { OptionComponent } from './option/option.component';
 
 @NgModule({
   imports: [
@@ -12,6 +13,6 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
     StoreRoutingModule,
     AngularFontAwesomeModule
   ],
-  declarations: [StoreComponent, ProductComponent]
+  declarations: [StoreComponent, ProductComponent, OptionComponent]
 })
 export class StoreModule { }

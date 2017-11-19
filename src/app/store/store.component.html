@@ -1,42 +1,42 @@
 <hr class="top-hr">
-<ul>
+<ul class="store">
   <li *ngFor="let item of products | async">
     <div>
       <button class="like heart">
-          <fa name="heart" class="icon" size="5"></fa>
+        <fa name="heart" class="icon" size="5"></fa>
       </button>
-      <button class="fab-btn-secondary quick-view-btn">Quick View</button>
+      <button class="quick-view-btn">Quick View</button>
       <a [routerLink]="[item.link, item.id]">
-        <span>
-          <img src="{{item.titleImage.src}}" alt="{{item.titleImage.alt}}" width="{{widthImg}}" height="{{heightImg}}">
-        </span>
+        <img src="{{item.titleImage.src}}" alt="{{item.titleImage.alt}}" width="{{widthImg}}" height="{{heightImg}}">
         <aside>
-          <div class="product-name">
-            <h3>
+          <ul>
+            <li class="product-name">
+              <h3>
                 {{item.name}}
-            </h3>
-          </div>
-          <div class="product-rating">
-            <span class="stars-wrap">
-              <span class="rating full-stars"></span>
-              <span class="rating rating-stars" [style.width.%]="item.rating * 100 / 5"></span>
-            </span>
-          </div>
-          <div class="product-price">
-            <em>
+              </h3>
+            </li>
+            <li class="product-rating">
+              <span class="stars-wrap">
+                <span class="rating full-stars"></span>
+                <span class="rating rating-stars" [style.width.%]="item.rating * 100 / 5"></span>
+              </span>
+            </li>
+            <li class="product-price">
+              <em>
                 {{item.price | currency:"USD"}}
-            </em>
-          </div>
-          <div class="product-max-size">
-            <em>
+              </em>
+            </li>
+            <li class="product-option">
+              <em>
                 Size up to {{item.bandSize[item.bandSize.length - 1].title}}{{item.cupSize[item.cupSize.length - 1].title.toUpperCase()}}
-            </em>
-          </div>
-          <div class="product-color-quant">
-            <em>
+              </em>
+            </li>
+            <li class="product-option">
+              <em>
                 {{item.colors.length}} color
-            </em>
-          </div>
+              </em>
+            </li>
+          </ul>
         </aside>
       </a>
     </div>
