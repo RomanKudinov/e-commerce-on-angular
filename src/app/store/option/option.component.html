@@ -1,8 +1,19 @@
-<ng-content></ng-content>
+<input type="radio"
+    name="{{type}}-size"
+    id="{{type}}-size-{{+index+1}}" 
+    value="{{option.title}}" [disabled]="miss">
+<label for="{{type}}-size-{{+index+1}}" 
+    (mouseenter)="changeState(type, true)"
+    (mouseleave)="changeState(type, false)"
+    (click)="chooseOption(option.title)"
+    [class.disabled-color]="miss && type === 'color'"
+    [class.disabled]="miss && type !== 'color'">
+    <span *ngIf="type !== 'color'">
+        {{option.title.toUpperCase()}}
+    </span>
+    <ng-content select="img"></ng-content>
+</label>
+<!-- <ng-content select="div"></ng-content> -->
 <ng-container *ngIf="state">
-    <div class="popup">
-        <img [src]="image.src" [alt]="image.alt">
-        <h4>{{image.alt}}</h4>
-        <span>Click to view photo</span>
-    </div>
+    <ng-content select="div"></ng-content>
 </ng-container>

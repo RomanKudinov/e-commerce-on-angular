@@ -4,7 +4,7 @@
     <div *ngFor="let img of images; let i = index" class="alt-img-wrap">
       <input type="radio" name="alt-images" (change)="changeImage(img)" id="img-{{i+1}}">
       <label class="alt-img" for="img-{{i+1}}">
-        <img [src]="img.src" [alt]="img.alt">
+        <img [src]="img.src" [alt]="img.title">
       </label>
     </div>
   </div>
@@ -59,13 +59,16 @@
           </span>
       </h4>
       <div class="colors-wrapper">
-        <vs-option *ngFor="let item of product?.colors; let i = index" [image]="item">
-            <div (change)="changeTitle(item.alt, 'color')">
-                <input type="radio" name="alt-images-color" id="img-color-{{i+1}}" value="{{item.alt}}">
-                <label for="img-color-{{i+1}}">
-                    <img [src]="item.src" [alt]="item.alt">
-                  </label>
-              </div>
+        <vs-option *ngFor="let item of product?.colors; let i = index" 
+        [option]="item" type="color" 
+        [index]="i" 
+        (title)="changeTitle($event, 'color')">
+          <img [src]="item.src" [alt]="item.title">
+          <div class="popup">
+              <img [src]="item.src" [alt]="item.title">
+              <h4>{{item.title}}</h4>
+              <span>Click to view photo</span>
+          </div>
         </vs-option>
       </div>
       <h4>
@@ -75,10 +78,10 @@
           </span>
       </h4>
       <div class="band-size-wrapper">
-        <vs-option *ngFor="let item of product?.bandSize; let i = index" [option]="item">
-            <input type="radio" name="band-size" id="band-size-{{i+1}}" (change)="changeTitle(item.title, 'bandSize')" value="{{item.title}}">
-            <label for="band-size-{{i+1}}">{{item.title}}</label>
-        </vs-option>
+        <vs-option *ngFor="let item of product?.bandSize; let i = index" 
+        [option]="item" type="band" 
+        [index]="i" 
+        (title)="changeTitle($event, 'band')"></vs-option>
       </div>
       <h4>
           Cup Size
@@ -87,10 +90,7 @@
           </span>
       </h4>
       <div class="cup-size-wrapper">
-        <vs-option *ngFor="let item of product?.cupSize; let i = index" [option]="item">
-            <input type="radio" name="cup-size" id="cup-size-{{i+1}}" (change)="changeTitle(item.title, 'cupSize')" value="{{item.title}}">
-            <label for="cup-size-{{i+1}}">{{item.title.toUpperCase()}}</label>
-        </vs-option>
+        <vs-option *ngFor="let item of product?.cupSize; let i = index" [option]="item" type="cup" [index]="i" (title)="changeTitle($event, 'cup')"></vs-option>
       </div>
       <a href="/" class="size">
         <span>Size & Fit</span>
@@ -118,5 +118,4 @@
       </p>
     </div>
   </div>
-
 </div>

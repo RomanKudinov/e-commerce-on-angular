@@ -1,10 +1,10 @@
-import { Component, OnInit, Input, ElementRef } from '@angular/core';
-import { AfterContentInit } from '@angular/core/src/metadata/lifecycle_hooks';
+import { Component, OnInit, Input, ElementRef, ContentChild, Renderer2, Output, EventEmitter } from '@angular/core';
 import { fromEvent } from 'rxjs/observable/fromEvent';
 import { map, merge } from 'rxjs/operators';
 
-import { Image } from '../../model/product.model';
 import { Option } from '../../model/product.model';
+import { FilterService } from '../../shared/filter.service';
+
 
 @Component({
   selector: 'vs-option',
@@ -12,26 +12,52 @@ import { Option } from '../../model/product.model';
   styleUrls: ['./option.component.sass']
 })
 export class OptionComponent implements OnInit {
-  @Input() image: Image = null;
-  @Input() option: Option = null;
+  @Input() option: Option;
+  @Input() type: string;
+  @Input() index: number;
+  @Output() title = new EventEmitter<string>();
   public state = false;
-  constructor(private _elem: ElementRef) { }
+  public miss = false;
+
+
+  constructor(private _filterService: FilterService) {
+  }
 
   ngOnInit() {
-    if (this.image !== null) {
-      const $mouseenter = fromEvent(this._elem.nativeElement, 'mouseenter').pipe(
-        map((e) => true)
-      );
+    this._filterService.getItem().subscribe((item) => {
+      this.filterOption(item);
+    });
+  }
 
-      const $mouseleave = fromEvent(this._elem.nativeElement, 'mouseleave').pipe(
-        map((e) => false)
-      );
+  changeState(type: string, state: boolean) {
+    if (type === 'color') {
+      this.state = state;
+    }
+  }
 
-        $mouseenter.pipe(
-          merge($mouseleave)
-        ).subscribe((s) => {
-          this.state = s;
-        });
+  private filterOption(missItem) {
+    for (const item in missItem) {
+      if (missItem[item] !== null) {
+        const missing = missItem[item].some(elem => elem === this.option.title);
+        if (missing) {
+          this.miss = missing;
+          return;
+        }
+
+        this.miss = missing;
+      }
+    }
+    this.miss = false;
+  }
+
+  chooseOption(title: string) {
+    if (!this.miss) {
+      this.title.emit(title);
+      if (this.option.miss) {
+        this._filterService.sendItem(this.option.miss, this.type);
+        return;
+      }
+      this._filterService.sendItem(null, this.type);
     }
   }
 }

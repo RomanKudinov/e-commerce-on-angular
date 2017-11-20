@@ -7,24 +7,18 @@ export class Product {
     link: string;
     bandSize?: Array<Option> | Option;
     cupSize?: Array<Option> | Option;
-    colors?: Array<Image> | Option;
-    titleImage: Image;
-    images: Array<Image>;
+    colors?: Array<Option> | Option;
+    titleImage: Option;
+    images: Array<Option>;
     rating: number;
     quantity: number;
     reviews: number;
 }
 
 export class Option {
+    src?: string;
     title?: string;
-    missBandSize?: Array<number>;
-    missCupSize?: Array<string>;
-    missColors?: Array<Image>;
-}
-
-export class Image extends Option {
-    src: string;
-    alt: string;
+    miss?: Array<any>;
 }
 
 

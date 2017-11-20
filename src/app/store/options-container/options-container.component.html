@@ -1,0 +1,12 @@
+<h4>
+  <ng-content select="span"></ng-content>
+  <span class="title">
+    {{title}}
+  </span>
+</h4>
+<div class="colors-wrapper">
+  <vs-option *ngFor="let item of options; let i = index" [option]="item" type="color" [index]="i" (title)="title = $event">
+    <ng-content select="img"></ng-content>
+    <ng-content select="div"></ng-content>
+  </vs-option>
+</div>

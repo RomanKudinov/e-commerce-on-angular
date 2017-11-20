@@ -1,6 +1,6 @@
 import { ProductService } from '../../shared/product.service';
 import { Component, OnInit, AfterViewInit } from '@angular/core';
-import { Product, Image } from '../../model/product.model';
+import { Product, Option } from '../../model/product.model';
 import { ActivatedRouteSnapshot, ActivatedRoute } from '@angular/router';
 import { Observable } from 'rxjs/Observable';
 
@@ -11,8 +11,8 @@ import { Observable } from 'rxjs/Observable';
 })
 export class ProductComponent implements OnInit {
   public product: Product;
-  public images: Image[];
-  public selectedImage: Image;
+  public images: Option[];
+  public selectedImage: Option;
   public ratingWidth: number;
   public colorTitle: string;
   public bandSizeTitle: string;
@@ -35,7 +35,7 @@ export class ProductComponent implements OnInit {
     );
   }
 
-  changeImage(image: Image) {
+  changeImage(image: Option) {
     this.selectedImage = image;
   }
 
@@ -44,10 +44,10 @@ export class ProductComponent implements OnInit {
       case 'color':
         this.colorTitle = title;
         break;
-      case 'bandSize':
+      case 'band':
         this.bandSizeTitle = title;
         break;
-      case 'cupSize':
+      case 'cup':
         this.cupSizeTitle = title;
         break;
     }
@@ -63,5 +63,4 @@ export class ProductComponent implements OnInit {
         break;
     }
   }
-
 }
