@@ -20,7 +20,7 @@ export class FilterService {
 
   constructor() { }
 
-  sendItem(item: any, type: string) {
+  sendOption(item: any, type: string) {
     switch (type) {
       case 'color':
       this._missOption.color = item;
@@ -31,7 +31,7 @@ export class FilterService {
       case 'cup':
       this._missOption.cup = item;
     }
-
+    console.log(this._missOption)
     this.$items.next(this._missOption);
   }
 

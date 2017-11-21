@@ -1,12 +1,16 @@
-<h4>
-  <ng-content select="span"></ng-content>
-  <span class="title">
+<h3>
+  <ng-content></ng-content>
+  <span class="title {{type}}-title">
     {{title}}
   </span>
-</h4>
-<div class="colors-wrapper">
-  <vs-option *ngFor="let item of options; let i = index" [option]="item" type="color" [index]="i" (title)="title = $event">
-    <ng-content select="img"></ng-content>
-    <ng-content select="div"></ng-content>
+</h3>
+<div class="{{type}}-wrapper">
+  <vs-option *ngFor="let option of options; let i = index" [option]="option" [type]="type" [index]="i" (title)="title = $event">
+    <img *ngIf="type === 'color'" [src]="option.src" [alt]="option.title">
+    <div *ngIf="type === 'color'" class="popup">
+      <img [src]="option.src" [alt]="option.title">
+      <h4>{{option.title}}</h4>
+      <span>Click to view photo</span>
+    </div>
   </vs-option>
 </div>

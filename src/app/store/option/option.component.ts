@@ -1,6 +1,4 @@
 import { Component, OnInit, Input, ElementRef, ContentChild, Renderer2, Output, EventEmitter } from '@angular/core';
-import { fromEvent } from 'rxjs/observable/fromEvent';
-import { map, merge } from 'rxjs/operators';
 
 import { Option } from '../../model/product.model';
 import { FilterService } from '../../shared/filter.service';
@@ -16,8 +14,8 @@ export class OptionComponent implements OnInit {
   @Input() type: string;
   @Input() index: number;
   @Output() title = new EventEmitter<string>();
-  public state = false;
-  public miss = false;
+  public hovered = false;
+  public missed = false;
 
 
   constructor(private _filterService: FilterService) {
@@ -29,9 +27,9 @@ export class OptionComponent implements OnInit {
     });
   }
 
-  changeState(type: string, state: boolean) {
+  changeState(type: string, hovered: boolean) {
     if (type === 'color') {
-      this.state = state;
+      this.hovered = hovered;
     }
   }
 
@@ -40,24 +38,28 @@ export class OptionComponent implements OnInit {
       if (missItem[item] !== null) {
         const missing = missItem[item].some(elem => elem === this.option.title);
         if (missing) {
-          this.miss = missing;
+          this.missed = missing;
           return;
         }
 
-        this.miss = missing;
+        this.missed = missing;
       }
     }
-    this.miss = false;
+    this.missed = false;
   }
 
-  chooseOption(title: string) {
-    if (!this.miss) {
-      this.title.emit(title);
+  sendOption() {
+    if (!this.missed) {
+      this.changeTitle();
       if (this.option.miss) {
-        this._filterService.sendItem(this.option.miss, this.type);
+        this._filterService.sendOption(this.option.miss, this.type);
         return;
       }
-      this._filterService.sendItem(null, this.type);
+      this._filterService.sendOption(null, this.type);
     }
+  }
+
+  changeTitle() {
+    this.title.emit(this.option.title);
   }
 }

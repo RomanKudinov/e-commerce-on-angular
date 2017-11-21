@@ -1,3 +1,5 @@
+\:host
+    display: block
 .product-wrapper
     display: flex
     width: 944px
@@ -39,15 +41,15 @@
     .product-desc-wrapper
         width: 430px
         flex-grow: 2
-        &>h3
+        h2
             font-weight: 300
             font-size: 26px
         .product-desc-wrap
             display: flex
             span
                 margin-right: 15px
-            a
                 line-height: 23px
+            a   
                 small:hover
                     color: #bf215d
             fa
@@ -85,8 +87,6 @@
             width: 430px
             font-size: 15px
             font-weight: 100
-            &>h4
-                font-size: 13px
             button[type="button"]
                 background-color: #ffffff
                 width: 35px
@@ -102,48 +102,11 @@
                     color: #5b5b5b
                     background-color: #f5f5f5
                     border: 1px solid #f5f5f5
-            .title
-                color: #666666
             .size
                 display: block
                 margin: 10px 0
                 fa
-                    font-size: 11px
-            .colors-wrapper
-                vs-color-popup
-                    position: relative
-            .colors-wrapper,
-            .band-size-wrapper,
-            .cup-size-wrapper
-                margin-bottom: 15px
-                display: flex
-                flex-wrap: wrap
-                img
-                    width: 100%
-                    height: 100%
-            .colors-wrapper
-                .disabled
-                    label:after
-                        content: ''
-                        display: block
-                        position: absolute
-                        width: 100%
-                        top: 0
-                        height: 100%
-                        background: linear-gradient(to bottom left, transparent calc(50% - 2px), white calc(50% - 1px), white calc(50% + 1px), transparent calc(50% + 2px)) no-repeat 0px 0px / 100px 100px
-            .band-size-wrapper,
-            .cup-size-wrapper
-                vs-option
-                    label
-                        font-size: 11px
-                        line-height: 33px
-                        outline: 1px solid #e1e1e1
-                        text-align: center
-                .disabled
-                    label
-                        background-color: #f5f5f5
-                        outline: 1px solid #f5f5f5
-                        cursor: none
+                    font-size: 11px    
             .quantity-wrapper
                 margin: 20px 0
                 span
@@ -162,17 +125,3 @@
                 line-height: 27px
             p
                 font-size: 13px
-.popup
-    position: absolute
-    bottom: 45px
-    z-index: 10
-    border: 1px solid #000000
-    padding: 10px
-    background-color: #ffffff
-    width: 145px
-    box-sizing: border-box
-    h4
-        font-weight: 400
-        margin-bottom: -4px
-    span
-        font-size: 11px

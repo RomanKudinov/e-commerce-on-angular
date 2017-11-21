@@ -8,6 +8,7 @@ import { Option } from '../../model/product.model';
 })
 export class OptionsContainerComponent implements OnInit {
   @Input() options: Option[];
+  @Input() type: string;
   public title: string;
 
   constructor() { }

@@ -1,19 +1,18 @@
 <input type="radio"
     name="{{type}}-size"
     id="{{type}}-size-{{+index+1}}" 
-    value="{{option.title}}" [disabled]="miss">
+    value="{{option.title}}" [disabled]="missed">
 <label for="{{type}}-size-{{+index+1}}" 
     (mouseenter)="changeState(type, true)"
     (mouseleave)="changeState(type, false)"
-    (click)="chooseOption(option.title)"
-    [class.disabled-color]="miss && type === 'color'"
-    [class.disabled]="miss && type !== 'color'">
+    (click)="sendOption()"
+    [class.disabled-color]="missed && type === 'color'"
+    [class.disabled]="missed && type !== 'color'">
     <span *ngIf="type !== 'color'">
         {{option.title.toUpperCase()}}
     </span>
     <ng-content select="img"></ng-content>
 </label>
-<!-- <ng-content select="div"></ng-content> -->
-<ng-container *ngIf="state">
+<ng-container *ngIf="hovered">
     <ng-content select="div"></ng-content>
 </ng-container>

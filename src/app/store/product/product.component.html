@@ -15,18 +15,16 @@
     <img src="{{selectedImage?.src}}" alt="{{selectedImage?.src}}" class="title-img">
   </div>
   <div class="product-desc-wrapper">
-    <h3>{{product?.name}}</h3>
+    <h2>{{product?.name}}</h2>
     <div class="product-desc-wrap">
       <span class="stars-wrap">
         <span class="rating full-stars"></span>
         <span class="rating rating-stars" [style.width.%]="ratingWidth"></span>
       </span>
       <span>
-        <a href="/">
           <small>
             {{product?.rating}}
           </small>
-        </a>
       </span>
       <span>
         <fa name="chevron-right" class="icon"></fa>
@@ -52,46 +50,15 @@
     </div>
     <hr>
     <form>
-      <h4>
-          Color
-          <span class="title">
-            {{colorTitle}}
-          </span>
-      </h4>
-      <div class="colors-wrapper">
-        <vs-option *ngFor="let item of product?.colors; let i = index" 
-        [option]="item" type="color" 
-        [index]="i" 
-        (title)="changeTitle($event, 'color')">
-          <img [src]="item.src" [alt]="item.title">
-          <div class="popup">
-              <img [src]="item.src" [alt]="item.title">
-              <h4>{{item.title}}</h4>
-              <span>Click to view photo</span>
-          </div>
-        </vs-option>
-      </div>
-      <h4>
-          Band Size
-          <span class="title">
-            {{bandSizeTitle}}
-          </span>
-      </h4>
-      <div class="band-size-wrapper">
-        <vs-option *ngFor="let item of product?.bandSize; let i = index" 
-        [option]="item" type="band" 
-        [index]="i" 
-        (title)="changeTitle($event, 'band')"></vs-option>
-      </div>
-      <h4>
-          Cup Size
-          <span class="title">
-            {{cupSizeTitle?.toUpperCase()}}
-          </span>
-      </h4>
-      <div class="cup-size-wrapper">
-        <vs-option *ngFor="let item of product?.cupSize; let i = index" [option]="item" type="cup" [index]="i" (title)="changeTitle($event, 'cup')"></vs-option>
-      </div>
+        <vs-options-container [options]="product?.colors" type="color">
+            Color
+        </vs-options-container>  
+        <vs-options-container [options]="product?.bandSize" type="band">
+            Band Size
+        </vs-options-container>
+        <vs-options-container  [options]="product?.cupSize" type="cup">
+            Cup Size
+        </vs-options-container>
       <a href="/" class="size">
         <span>Size & Fit</span>
         <fa name="chevron-right" class="icon" size="5"></fa>

@@ -14,9 +14,6 @@ export class ProductComponent implements OnInit {
   public images: Option[];
   public selectedImage: Option;
   public ratingWidth: number;
-  public colorTitle: string;
-  public bandSizeTitle: string;
-  public cupSizeTitle: string;
   public quantity = 1;
 
   constructor(private _productService: ProductService,
@@ -37,20 +34,6 @@ export class ProductComponent implements OnInit {
 
   changeImage(image: Option) {
     this.selectedImage = image;
-  }
-
-  changeTitle(title: string, section: string) {
-    switch (section) {
-      case 'color':
-        this.colorTitle = title;
-        break;
-      case 'band':
-        this.bandSizeTitle = title;
-        break;
-      case 'cup':
-        this.cupSizeTitle = title;
-        break;
-    }
   }
 
   changeQuantity(type: string) {
