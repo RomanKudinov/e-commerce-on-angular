@@ -1,3 +1,5 @@
+import { Option } from './option.model';
+
 export class Product {
     id: number;
     name: string;
@@ -14,13 +16,6 @@ export class Product {
     quantity: number;
     reviews: number;
 }
-
-export class Option {
-    src?: string;
-    title?: string;
-    miss?: Array<any>;
-}
-
 
 
 

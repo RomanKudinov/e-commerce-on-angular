@@ -12,6 +12,13 @@
   </nav>
 </header>
 
-<section>
+<vs-cart [@showCart]="cartState"></vs-cart>
+
+<section class="outlet">
   <router-outlet></router-outlet>
 </section>
+
+<button type="button" 
+  class="big-btn" 
+  [class.open]="cartState === 'open'"
+  (click)="closeCart()"></button>

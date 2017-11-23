@@ -1,0 +1,43 @@
+<div class="line-content">
+  <div class="line-description">
+    <h2>{{line.name}}</h2>
+    <ul>
+      <li>
+        <span>
+          Color
+        </span>
+        <span>
+          {{line.color.title}}
+        </span>
+      </li>
+      <li>
+        <span>
+            Size
+        </span>
+        <span>
+          {{line.size}}
+        </span>
+      </li>
+      <li>
+        <span>
+          Qty
+        </span>
+        <span>
+          {{line.quantity}}
+        </span>
+      </li>
+    </ul>
+    <h3>{{line.price | currency:"USD"}}</h3>
+  </div>
+  <div class="image-container">
+      <a [routerLink]="[line.link, line.id]">
+        <img class="title" [src]="line.image.src" [alt]="line.image.title">
+        <img class="color" [src]="line.color.src" [alt]="line.color.title">
+      </a>
+  </div>
+</div>
+<div class="btn-group">
+  <button class="fab-btn-secondary">Edit</button>
+  <button class="fab-btn-secondary" (click)="removeLineFromCart()">Remove</button>
+</div>
+<hr>

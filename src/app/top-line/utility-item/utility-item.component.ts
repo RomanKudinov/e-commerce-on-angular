@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input, HostListener } from '@angular/core';
+import { CartService } from '../../shared/cart.service';
 
 @Component({
   selector: 'vs-utility-item',
@@ -6,10 +7,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./utility-item.component.sass']
 })
 export class UtilityItemComponent implements OnInit {
+  @Input() type: string;
 
-  constructor() { }
+  constructor(private _cart: CartService) { }
 
   ngOnInit() {
+  }
+
+  @HostListener('click')
+  openCart() {
+    if (this.type === 'cart') {
+      this._cart.setState('open');
+    }
   }
 
 }

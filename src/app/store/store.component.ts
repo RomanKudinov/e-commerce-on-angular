@@ -1,5 +1,6 @@
+import { ProductComponent } from './product/product.component';
 import { ProductService } from '../shared/product.service';
-import { Component, OnInit, OnChanges } from '@angular/core';
+import { Component, OnInit, OnChanges, ViewContainerRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '../model/product.model';
 import { Observable } from 'rxjs/Observable';
@@ -10,6 +11,7 @@ import { Observable } from 'rxjs/Observable';
   styleUrls: ['./store.component.sass']
 })
 export class StoreComponent implements OnInit, OnChanges {
+  @ViewChild('modalContainer', {read: ViewContainerRef}) modal: ViewContainerRef;
   public widthImg = 280;
   public heightImg = 374;
   public selectedCategory: string[] = null;
@@ -28,10 +30,6 @@ export class StoreComponent implements OnInit, OnChanges {
 
   ngOnChanges() {
   }
-
-  // get products(): Product[] {
-  //   return this._productService.getProducts(this.selectedCategory);
-  // }
 
   getCategories(): string[] {
     return this._activateRoute.snapshot.url.map((segment) => segment.path);

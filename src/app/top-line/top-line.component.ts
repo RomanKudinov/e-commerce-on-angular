@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CartService } from '../shared/cart.service';
 
 @Component({
   selector: 'vs-top-line',
@@ -7,7 +8,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class TopLineComponent implements OnInit {
 
-  constructor() { }
+  constructor(public cart: CartService) { }
 
   ngOnInit() {
   }

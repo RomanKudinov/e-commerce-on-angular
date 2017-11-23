@@ -3,13 +3,13 @@ import { Injectable } from '@angular/core';
 import { Product } from '../model/product.model';
 import { Observable } from 'rxjs/Observable';
 import { filter, map, find } from 'rxjs/operators';
+import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class ProductService {
   private _products: Observable<Product[]>;
 
   constructor(private _restData: RestDataService) {
-    console.log('create');
     this._products = _restData.getProducts();
   }
 

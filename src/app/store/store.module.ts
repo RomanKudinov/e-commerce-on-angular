@@ -8,6 +8,7 @@ import { AngularFontAwesomeModule } from 'angular-font-awesome/angular-font-awes
 import { OptionComponent } from './option/option.component';
 import { FilterService } from '../shared/filter.service';
 import { OptionsContainerComponent } from './options-container/options-container.component';
+import { ModalContainerComponent } from './modal-container/modal-container.component';
 
 @NgModule({
   imports: [
@@ -15,7 +16,8 @@ import { OptionsContainerComponent } from './options-container/options-container
     StoreRoutingModule,
     AngularFontAwesomeModule
   ],
-  declarations: [StoreComponent, ProductComponent, OptionComponent, OptionsContainerComponent],
+  declarations: [StoreComponent, ProductComponent, OptionComponent, OptionsContainerComponent, ModalContainerComponent],
+  exports: [ModalContainerComponent],
   providers: [FilterService]
 })
 export class StoreModule { }

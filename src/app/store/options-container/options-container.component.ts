@@ -1,5 +1,5 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { Option } from '../../model/product.model';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
+import { Option } from '../../model/option.model';
 
 @Component({
   selector: 'vs-options-container',
@@ -9,11 +9,17 @@ import { Option } from '../../model/product.model';
 export class OptionsContainerComponent implements OnInit {
   @Input() options: Option[];
   @Input() type: string;
+  @Output() lineOption: EventEmitter<Option> = new EventEmitter<Option>();
   public title: string;
 
   constructor() { }
 
   ngOnInit() {
+  }
+
+  changeTitle(option: Option) {
+    this.title = option.title;
+    this.lineOption.emit(option);
   }
 
 }

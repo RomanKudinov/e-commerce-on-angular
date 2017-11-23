@@ -3,6 +3,9 @@ $width: 1180px
 \:host
     display: block
     width: 100%
+    position: relative
+    overflow: hidden
+    min-height: 100vh
 header
     margin-bottom: 16px
     vs-top-line
@@ -15,7 +18,8 @@ header
         display: flex
         justify-content: center
         width: $width
-        margin: 80px auto 30px auto
+        margin: 0 auto
+        padding: 80px 0 30px 0
     nav
         position: relative
         z-index: 1
@@ -23,6 +27,24 @@ header
         justify-content: center
         width: $width
         margin: 20px auto 0 auto
-section
+.outlet
     width: $width
     margin: 0 auto
+vs-cart
+    height: 100vh
+    position: absolute
+    top: 0
+    right: 0
+    z-index: 1001
+.big-btn
+    display: none
+    position: absolute
+    top: 0
+    z-index: 1000
+    width: 100vw
+    height: 100vh
+    background-color: rgba(0, 0, 0, .5)
+.open
+    display: block
+vs-modal-product-container
+    display: none

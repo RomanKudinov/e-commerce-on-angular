@@ -5,7 +5,7 @@
   </span>
 </h3>
 <div class="{{type}}-wrapper">
-  <vs-option *ngFor="let option of options; let i = index" [option]="option" [type]="type" [index]="i" (title)="title = $event">
+  <vs-option *ngFor="let option of options; let i = index" [option]="option" [type]="type" [index]="i" (title)="changeTitle($event)">
     <img *ngIf="type === 'color'" [src]="option.src" [alt]="option.title">
     <div *ngIf="type === 'color'" class="popup">
       <img [src]="option.src" [alt]="option.title">

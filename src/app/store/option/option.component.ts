@@ -1,7 +1,6 @@
 import { Component, OnInit, Input, ElementRef, ContentChild, Renderer2, Output, EventEmitter } from '@angular/core';
-
-import { Option } from '../../model/product.model';
 import { FilterService } from '../../shared/filter.service';
+import { Option } from '../../model/option.model';
 
 
 @Component({
@@ -13,7 +12,7 @@ export class OptionComponent implements OnInit {
   @Input() option: Option;
   @Input() type: string;
   @Input() index: number;
-  @Output() title = new EventEmitter<string>();
+  @Output() title = new EventEmitter<Option>();
   public hovered = false;
   public missed = false;
 
@@ -60,6 +59,6 @@ export class OptionComponent implements OnInit {
   }
 
   changeTitle() {
-    this.title.emit(this.option.title);
+    this.title.emit(this.option);
   }
 }

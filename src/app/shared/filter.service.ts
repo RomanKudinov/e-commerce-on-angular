@@ -1,6 +1,6 @@
 import { Injectable } from '@angular/core';
 import { Subject } from 'rxjs/Subject';
-import { Option } from '../model/product.model';
+import { Option } from '../model/option.model';
 import { Observable } from 'rxjs/Observable';
 
 interface MissOption {
@@ -31,7 +31,6 @@ export class FilterService {
       case 'cup':
       this._missOption.cup = item;
     }
-    console.log(this._missOption)
     this.$items.next(this._missOption);
   }
 

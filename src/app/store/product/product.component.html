@@ -1,7 +1,7 @@
 <hr class="top-hr">
 <div class="product-wrapper">
   <div class="alt-img-wrapper">
-    <div *ngFor="let img of images; let i = index" class="alt-img-wrap">
+    <div *ngFor="let img of product?.images; let i = index" class="alt-img-wrap">
       <input type="radio" name="alt-images" (change)="changeImage(img)" id="img-{{i+1}}">
       <label class="alt-img" for="img-{{i+1}}">
         <img [src]="img.src" [alt]="img.title">
@@ -50,13 +50,13 @@
     </div>
     <hr>
     <form>
-        <vs-options-container [options]="product?.colors" type="color">
+        <vs-options-container [options]="product?.colors" type="color" (lineOption)="setLineOption($event, 'COLOR')">
             Color
         </vs-options-container>  
-        <vs-options-container [options]="product?.bandSize" type="band">
+        <vs-options-container [options]="product?.bandSize" type="band" (lineOption)="setLineOption($event, 'BAND')">
             Band Size
         </vs-options-container>
-        <vs-options-container  [options]="product?.cupSize" type="cup">
+        <vs-options-container  [options]="product?.cupSize" type="cup" (lineOption)="setLineOption($event, 'CUP')">
             Cup Size
         </vs-options-container>
       <a href="/" class="size">
@@ -64,19 +64,19 @@
         <fa name="chevron-right" class="icon" size="5"></fa>
       </a>
       <div class="quantity-wrapper">
-        <button type="button" [disabled]="quantity <= 1" (click)="changeQuantity('minus')">
+        <button class="quantity" type="button" [disabled]="quantity <= 1" (click)="quantity = quantity - 1">
           <svg width="10" height="10">
             <path stroke="#5b5b5b" stroke-width="1" d="M 0 5 L 10 5" />
           </svg>
         </button>
         <span>Qty {{quantity}}</span>
-        <button type="button" [disabled]="quantity >= product?.quantity" (click)="changeQuantity('plus')">
+        <button class="quantity" type="button" [disabled]="quantity >= product?.quantity" (click)="quantity = quantity + 1;">
           <svg width="10" height="10">
             <path stroke="#5b5b5b" stroke-width="1" d="M 5 0 L 5 10 M 0 5 L 10 5" />
           </svg>
         </button>
       </div>
-      <button class="fab-btn-primary">Add to bag</button>
+      <button type="button" class="fab-btn-primary" (click)="addLineToCart()">Add to bag</button>
     </form>
     <div class="desc-wrapper">
       <h4>Description</h4>
