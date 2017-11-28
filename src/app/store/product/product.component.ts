@@ -1,3 +1,4 @@
+import { ModalService } from './../../shared/modal.service';
 import { Line } from '../../model/line-item.model';
 import { ProductService } from '../../shared/product.service';
 import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
@@ -20,9 +21,9 @@ interface LineOption {
   styleUrls: ['./product.component.sass']
 })
 export class ProductComponent implements OnInit {
-  public product: Product;
+  @Input() product: Product;
+  @Input() type = null;
   public selectedImage: Option;
-  public ratingWidth: number;
   public quantity = 1;
   private _lineOption: LineOption = {
     color: null
@@ -30,20 +31,24 @@ export class ProductComponent implements OnInit {
 
   constructor(private _productService: ProductService,
     private _route: ActivatedRoute,
-    private _cart: CartService) {
-     }
+    private _cart: CartService,
+    private _modalService: ModalService) {
+  }
 
   ngOnInit() {
+    if (this.type === null) {
       this._route.params.forEach((params: Params) => {
         const id = params['id'];
         this._productService.getProduct(id).subscribe(
           (p) => {
             this.product = p;
             this.selectedImage = p.titleImage;
-            this.ratingWidth = (p.rating * 100) / 5;
           }
         );
       });
+    } else {
+      this.selectedImage = this.product.titleImage;
+    }
   }
 
   changeImage(image: Option) {
@@ -62,6 +67,20 @@ export class ProductComponent implements OnInit {
         this._lineOption.cup = lineOption;
         break;
     }
+  }
+
+  editLineAtCart() {
+    this._cart.updateLine(this.product.id, new Line({
+      id: this.product.id,
+      name: this.product.name,
+      link: this.product.link,
+      color: this._lineOption.color,
+      size: `${this._lineOption.band.title}${this._lineOption.cup.title.toUpperCase()}`,
+      price: this.product.price,
+      quantity: this.quantity,
+      image: this.product.titleImage
+    }));
+    this._modalService.setModalData({product: null, type: null, state: false});
   }
 
   addLineToCart() {

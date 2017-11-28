@@ -4,6 +4,7 @@ import { Component, OnInit, OnChanges, ViewContainerRef, ViewChild } from '@angu
 import { ActivatedRoute } from '@angular/router';
 import { Product } from '../model/product.model';
 import { Observable } from 'rxjs/Observable';
+import { ModalService } from '../shared/modal.service';
 
 @Component({
   selector: 'vs-store',
@@ -18,7 +19,8 @@ export class StoreComponent implements OnInit, OnChanges {
   public products: Observable<Product[]>;
 
   constructor(private _productService: ProductService,
-    private _activateRoute: ActivatedRoute) {
+    private _activateRoute: ActivatedRoute,
+    private _modalService: ModalService) {
      }
 
   ngOnInit() {
@@ -33,5 +35,9 @@ export class StoreComponent implements OnInit, OnChanges {
 
   getCategories(): string[] {
     return this._activateRoute.snapshot.url.map((segment) => segment.path);
+  }
+
+  setModalData(product) {
+    this._modalService.setModalData({product, type: 'ADD', state: true});
   }
 }

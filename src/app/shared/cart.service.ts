@@ -24,6 +24,11 @@ export class CartService {
     this.recalculate();
   }
 
+  updateLine(id: number, newLine: Line) {
+    this.cart.splice(this.cart.findIndex((line) => line.id === id), 1, newLine);
+    this.recalculate();
+  }
+
   getState(): Observable<string> {
     return this.cartState.asObservable();
   }

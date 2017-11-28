@@ -1,3 +1,4 @@
+import { ModalService } from './shared/modal.service';
 import { CartModule } from './cart/cart.module';
 import { ProductService } from './shared/product.service';
 import { StoreModule } from './store/store.module';
@@ -40,6 +41,7 @@ import { CartService } from './shared/cart.service';
     NavigationService,
     ProductService,
     CartService,
+    ModalService,
     {
       provide: HTTP_INTERCEPTORS,
       useClass: TokenInteceptor,

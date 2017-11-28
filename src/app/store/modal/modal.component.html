@@ -1,0 +1,15 @@
+<div class="modal-wrapper" *ngIf="state">
+    <div class="modal-content">
+        <div class="top-wrapper">
+            <h2>{{type === 'ADD' ? 'Quick View' : 'Update View'}}</h2>
+            <button (click)="closeModal()">
+                <svg width="37px" height="37px" stroke="#000" stroke-width="2px">
+                    <path d="M 12,12 L 25,25 M 12,25 L 25,12 " />
+                </svg>
+            </button>
+        </div>
+        <hr>
+        <vs-product [product]="product" [type]="type" class="modal"></vs-product>
+    </div>
+    <button class="close-btn" (click)="closeModal()"></button>
+</div>

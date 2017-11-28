@@ -1,30 +1,33 @@
 <hr class="top-hr">
 <div class="product-wrapper">
-  <div class="alt-img-wrapper">
-    <div *ngFor="let img of product?.images; let i = index" class="alt-img-wrap">
-      <input type="radio" name="alt-images" (change)="changeImage(img)" id="img-{{i+1}}">
-      <label class="alt-img" for="img-{{i+1}}">
-        <img [src]="img.src" [alt]="img.title">
-      </label>
+  <div class="images-wrapper">
+    <div class="alt-img-wrapper">
+      <div *ngFor="let img of product?.images; let i = index" class="alt-img-wrap">
+        <input type="radio" name="alt-images" (change)="changeImage(img)" id="img-{{i+1}}">
+        <label class="alt-img" for="img-{{i+1}}">
+          <img [src]="img.src" [alt]="img.title">
+        </label>
+      </div>
+    </div>
+    <div class="title-img-wrapper">
+      <button class="heart">
+        <fa name="heart" class="icon" size="5"></fa>
+      </button>
+      <img src="{{selectedImage?.src}}" alt="{{selectedImage?.title}}" class="title-img">
     </div>
   </div>
-  <div class="title-img-wrapper">
-    <button class="heart">
-      <fa name="heart" class="icon" size="5"></fa>
-    </button>
-    <img src="{{selectedImage?.src}}" alt="{{selectedImage?.src}}" class="title-img">
-  </div>
+
   <div class="product-desc-wrapper">
     <h2>{{product?.name}}</h2>
     <div class="product-desc-wrap">
       <span class="stars-wrap">
         <span class="rating full-stars"></span>
-        <span class="rating rating-stars" [style.width.%]="ratingWidth"></span>
+        <span class="rating rating-stars" [style.width.%]="product?.rating * 100 / 5"></span>
       </span>
       <span>
-          <small>
-            {{product?.rating}}
-          </small>
+        <small>
+          {{product?.rating}}
+        </small>
       </span>
       <span>
         <fa name="chevron-right" class="icon"></fa>
@@ -50,15 +53,15 @@
     </div>
     <hr>
     <form>
-        <vs-options-container [options]="product?.colors" type="color" (lineOption)="setLineOption($event, 'COLOR')">
-            Color
-        </vs-options-container>  
-        <vs-options-container [options]="product?.bandSize" type="band" (lineOption)="setLineOption($event, 'BAND')">
-            Band Size
-        </vs-options-container>
-        <vs-options-container  [options]="product?.cupSize" type="cup" (lineOption)="setLineOption($event, 'CUP')">
-            Cup Size
-        </vs-options-container>
+      <vs-options-container [options]="product?.colors" type="color" (lineOption)="setLineOption($event, 'COLOR')">
+        Color
+      </vs-options-container>
+      <vs-options-container [options]="product?.bandSize" type="band" (lineOption)="setLineOption($event, 'BAND')">
+        Band Size
+      </vs-options-container>
+      <vs-options-container [options]="product?.cupSize" type="cup" (lineOption)="setLineOption($event, 'CUP')">
+        Cup Size
+      </vs-options-container>
       <a href="/" class="size">
         <span>Size & Fit</span>
         <fa name="chevron-right" class="icon" size="5"></fa>
@@ -76,7 +79,8 @@
           </svg>
         </button>
       </div>
-      <button type="button" class="fab-btn-primary" (click)="addLineToCart()">Add to bag</button>
+      <button *ngIf="type === 'EDIT'" type="button" class="fab-btn-primary" (click)="editLineAtCart()">Update</button>
+      <button *ngIf="type !== 'EDIT'" type="button" class="fab-btn-primary" (click)="addLineToCart()">Add to bag</button>
     </form>
     <div class="desc-wrapper">
       <h4>Description</h4>
