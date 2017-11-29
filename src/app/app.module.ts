@@ -1,3 +1,4 @@
+import { ModalComponent } from './store/modal/modal.component';
 import { ModalService } from './shared/modal.service';
 import { CartModule } from './cart/cart.module';
 import { ProductService } from './shared/product.service';
@@ -35,6 +36,9 @@ import { CartService } from './shared/cart.service';
     NavigationModule,
     StoreModule,
     CartModule
+  ],
+  entryComponents: [
+    ModalComponent
   ],
   providers: [
     RestDataService,

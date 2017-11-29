@@ -1,7 +1,9 @@
 import { style } from '@angular/animations';
-import { Component, OnInit, ElementRef } from '@angular/core';
+import { Component, OnInit, ElementRef, Input } from '@angular/core';
 import { Product } from '../../model/product.model';
 import { ModalService } from '../../shared/modal.service';
+import { Subject } from 'rxjs/Subject';
+import { ModalResults } from '../../shared/modal-results.enum';
 
 @Component({
   selector: 'vs-modal',
@@ -11,25 +13,24 @@ import { ModalService } from '../../shared/modal.service';
 export class ModalComponent implements OnInit {
   public product: Product;
   public type: string;
-  public state = false;
+  public state: Subject<ModalResults>;
 
   constructor(private _modalService: ModalService,
-    private _elem: ElementRef) { }
+    private _elem: ElementRef) {
+      this.state = new Subject();
+    }
 
   ngOnInit() {
-    this._modalService.getModalData().subscribe((elem) => {
-      this.product = elem.product;
-      this.type = elem.type;
-      this.state = elem.state;
-      if (elem.state) {
-        this._elem.nativeElement.parentElement.style.height = '100vh';
-      }
-    });
+    // this._elem.nativeElement.parentElement.style.height = '100vh';
   }
 
-  closeModal() {
-    this.state = !this.state;
-    this._elem.nativeElement.parentElement.style.height = '';
+  public getModalState(): Subject<ModalResults> {
+    return this.state;
+  }
+
+  close() {
+    this.state.next(ModalResults.Closed);
+    // this._elem.nativeElement.parentElement.style.height = '';
   }
 
 }

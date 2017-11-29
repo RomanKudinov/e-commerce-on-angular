@@ -5,7 +5,7 @@
       <button class="like heart">
         <fa name="heart" class="icon" size="5"></fa>
       </button>
-      <button type="button" class="quick-view-btn" (click)="setModalData(item)">Quick View</button>
+      <button type="button" class="quick-view-btn" (click)="showModal(item)">Quick View</button>
       <a [routerLink]="[item.link, item.id]">
         <img src="{{item.titleImage.src}}" alt="{{item.titleImage.title}}" width="{{widthImg}}" height="{{heightImg}}">
         <aside>

@@ -1,20 +1,42 @@
-import { Injectable } from '@angular/core';
-import { Subject } from 'rxjs/Subject';
+import { ModalComponent } from '../store/modal/modal.component';
+import { Injectable, ViewContainerRef, ComponentFactoryResolver, ComponentRef } from '@angular/core';
 import { Product } from '../model/product.model';
-import { Observable } from 'rxjs/Observable';
+import { ModalResults } from './modal-results.enum';
+import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class ModalService {
-  private _modalData = new Subject<{product: Product, type: string, state: boolean}>();
+  public modalContainer: ViewContainerRef;
 
-  constructor() { }
+  constructor(private _cfr: ComponentFactoryResolver) { }
 
-  setModalData(modal: {product: Product, type: string, state: boolean}) {
-    this._modalData.next(modal);
+  public init(modalContainer: ViewContainerRef) {
+    this.modalContainer = modalContainer;
   }
 
-  getModalData(): Observable<{product: Product, type: string, state: boolean}> {
-    return this._modalData.asObservable();
+  // tslint:disable-next-line:no-shadowed-variable
+  private _createComponent<ModalComponent>(componentType: { new(...args: any[]): ModalComponent }): ComponentRef<ModalComponent> {
+    const factory = this._cfr.resolveComponentFactory(componentType);
+    return factory.create(this.modalContainer.parentInjector);
   }
 
+
+  // tslint:disable-next-line:no-shadowed-variable
+  private _createComponentWithData<ModalComponent>(componentType: { new(...args: any[]): ModalComponent }, data: any)
+    : ComponentRef<ModalComponent> {
+    const component = this._createComponent(componentType);
+    Object.assign(component.instance, data);
+
+    return component;
+  }
+
+  // tslint:disable-next-line:no-shadowed-variable
+  public showModal<ModalComponent>(componentType: { new(...args: any[]): ModalComponent; },
+    data: { product: Product, type: string }): Subject<ModalResults> {
+
+    const modal = this._createComponentWithData(componentType, data);
+    this.modalContainer.insert(modal.hostView);
+    const subject = modal.instance.getModalState();
+    return subject;
+  }
 }

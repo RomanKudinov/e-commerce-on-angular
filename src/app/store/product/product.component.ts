@@ -80,7 +80,6 @@ export class ProductComponent implements OnInit {
       quantity: this.quantity,
       image: this.product.titleImage
     }));
-    this._modalService.setModalData({product: null, type: null, state: false});
   }
 
   addLineToCart() {

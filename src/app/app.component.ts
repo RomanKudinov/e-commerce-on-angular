@@ -3,6 +3,10 @@ import { CartService } from './shared/cart.service';
 import { NavigationService } from './shared/navigation.service';
 import { Component, OnInit, ElementRef, ViewChild, ViewContainerRef } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
+import { Product } from './model/product.model';
+import { ModalComponent } from './store/modal/modal.component';
+import { ModalResults } from './shared/modal-results.enum';
+import { ModalService } from './shared/modal.service';
 
 @Component({
   selector: 'vs-root',
@@ -22,15 +26,18 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
   ]
 })
 export class AppComponent implements OnInit {
+  @ViewChild('modal', {read: ViewContainerRef}) modal: ViewContainerRef;
   public cartState = 'close';
 
   constructor(private _navigationService: NavigationService,
     public cart: CartService,
     private _elem: ElementRef,
-    private _productService: ProductService) {
+    private _productService: ProductService,
+    private _modalService: ModalService) {
   }
 
   ngOnInit() {
+    this._modalService.init(this.modal);
     // tslint:disable-next-line:no-shadowed-variable
     this.cart.getState().subscribe((state) => {
       this.cartState = state;
