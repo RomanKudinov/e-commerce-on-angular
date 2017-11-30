@@ -1,13 +1,16 @@
+import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
+import { ActivatedRouteSnapshot, ActivatedRoute, Params } from '@angular/router';
+import { FormBuilder } from '@angular/forms';
+
+import { Observable } from 'rxjs/Observable';
+
 import { ModalService } from './../../shared/modal.service';
 import { Line } from '../../model/line-item.model';
 import { ProductService } from '../../shared/product.service';
-import { Component, OnInit, AfterViewInit, Input } from '@angular/core';
 import { Product } from '../../model/product.model';
-import { ActivatedRouteSnapshot, ActivatedRoute, Params } from '@angular/router';
-import { Observable } from 'rxjs/Observable';
 import { Option } from '../../model/option.model';
 import { CartService } from '../../shared/cart.service';
-import { FormBuilder } from '@angular/forms';
+
 
 interface LineOption {
   color: Option;

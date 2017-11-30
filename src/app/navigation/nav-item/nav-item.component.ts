@@ -1,13 +1,6 @@
-import { Component, OnInit, Input, ElementRef, ViewChild, Renderer2, AfterViewInit, ViewContainerRef } from '@angular/core';
+import { Component, OnInit, Input, ElementRef, ViewChild, Renderer2, AfterViewInit, ViewContainerRef, HostListener } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Router } from '@angular/router';
-
-import { Observable } from 'rxjs/Observable';
-import { fromEvent} from 'rxjs/observable/fromEvent';
-import { map, merge } from 'rxjs/operators';
-// import 'rxjs/add/observable/fromEvent';
-// import 'rxjs/add/operator/map';
-// import 'rxjs/add/operator/merge';
 
 import { NavItem } from '../../model/nav-item.model';
 
@@ -18,19 +11,19 @@ import { NavItem } from '../../model/nav-item.model';
   styleUrls: ['./nav-item.component.sass'],
   animations: [
     trigger('showNavigation', [
-      state('start', style({
+      state('close', style({
         display: 'none',
       })),
-      state('end', style({
+      state('open', style({
         display: 'block',
       }))
     ]),
     trigger('sylishListItem', [
-      state('start', style({
+      state('close', style({
         color: '#000',
         borderBottom: ''
       })),
-      state('end', style({
+      state('open', style({
         color: '#d91560',
         borderBottom: '2px solid #d91560'
       }))
@@ -40,26 +33,23 @@ import { NavItem } from '../../model/nav-item.model';
 export class NavItemComponent implements OnInit, AfterViewInit {
   @Input() item: NavItem;
   @ViewChild('section') section: ElementRef;
-  public state = 'start';
+  public state = 'close';
 
   constructor(private _renderer: Renderer2,
     private _router: Router,
     private _vcr: ViewContainerRef) { }
 
   ngOnInit() {
-    const $mouseenter = fromEvent(this._vcr.element.nativeElement, 'mouseenter').pipe(
-      map((e) => 'end')
-    );
+  }
 
-    const $mouseleave = fromEvent(this._vcr.element.nativeElement, 'mouseleave').pipe(
-      map((e) => 'start')
-    );
+  @HostListener('mouseenter')
+  open() {
+    this.state = 'open';
+  }
 
-      $mouseenter.pipe(
-        merge($mouseleave)
-      ).subscribe((s) => {
-        this.state = s;
-      });
+  @HostListener('mouseleave')
+  close() {
+    this.state = 'close';
   }
 
   ngAfterViewInit() {

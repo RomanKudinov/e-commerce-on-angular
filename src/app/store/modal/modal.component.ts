@@ -1,8 +1,10 @@
 import { style } from '@angular/animations';
 import { Component, OnInit, ElementRef, Input } from '@angular/core';
+
+import { Subject } from 'rxjs/Subject';
+
 import { Product } from '../../model/product.model';
 import { ModalService } from '../../shared/modal.service';
-import { Subject } from 'rxjs/Subject';
 import { ModalResults } from '../../shared/modal-results.enum';
 
 @Component({

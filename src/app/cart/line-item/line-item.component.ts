@@ -1,6 +1,7 @@
+import { Component, OnInit, ViewEncapsulation, Input, ViewContainerRef, ViewChild } from '@angular/core';
+
 import { ProductService } from '../../shared/product.service';
 import { CartService } from '../../shared/cart.service';
-import { Component, OnInit, ViewEncapsulation, Input, ViewContainerRef, ViewChild } from '@angular/core';
 import { Line } from '../../model/line-item.model';
 import { ModalService } from '../../shared/modal.service';
 import { ModalComponent } from '../../store/modal/modal.component';

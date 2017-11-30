@@ -1,8 +1,9 @@
+import { Component, OnInit, ElementRef, ViewChild, ViewContainerRef } from '@angular/core';
+import { trigger, state, style, transition, animate } from '@angular/animations';
+
 import { ProductService } from './shared/product.service';
 import { CartService } from './shared/cart.service';
 import { NavigationService } from './shared/navigation.service';
-import { Component, OnInit, ElementRef, ViewChild, ViewContainerRef } from '@angular/core';
-import { trigger, state, style, transition, animate } from '@angular/animations';
 import { Product } from './model/product.model';
 import { ModalComponent } from './store/modal/modal.component';
 import { ModalResults } from './shared/modal-results.enum';

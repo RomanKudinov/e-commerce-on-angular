@@ -1,7 +1,8 @@
-import { ProductComponent } from './product/product.component';
-import { ProductService } from '../shared/product.service';
 import { Component, OnInit, OnChanges, ViewContainerRef, ViewChild } from '@angular/core';
 import { ActivatedRoute } from '@angular/router';
+
+import { ProductComponent } from './product/product.component';
+import { ProductService } from '../shared/product.service';
 import { Product } from '../model/product.model';
 import { Observable } from 'rxjs/Observable';
 import { ModalService } from '../shared/modal.service';

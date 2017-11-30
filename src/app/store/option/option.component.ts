@@ -1,4 +1,14 @@
-import { Component, OnInit, Input, ElementRef, ContentChild, Renderer2, Output, EventEmitter } from '@angular/core';
+import {
+  Component,
+  OnInit,
+  Input,
+  ElementRef,
+  ContentChild,
+  Renderer2,
+  Output,
+  EventEmitter
+} from '@angular/core';
+
 import { FilterService } from '../../shared/filter.service';
 import { Option } from '../../model/option.model';
 
