@@ -1,7 +1,7 @@
 $accent: #d91560
 
 \:host
-    padding: (10 / 1180 * 100%) (15 / 1180 * 100%)
+    padding: 10px 15px
     position: relative
     display: flex
     &:hover
@@ -29,7 +29,7 @@ button
     display: flex
     flex-direction: column
     justify-content: space-around
-    padding: (15 / 40 * 100%) (30 / 40 * 100%)
+    padding: 0 (30 / 40 * 100%)
     background-color: #fff
     z-index: 2
     a
@@ -39,5 +39,8 @@ button
         color: gray
         &:hover
             color: $accent
+        &:first-child
+            padding: 15px 0 5px 0
         &:last-child
+            padding: 5px 0 15px 0
             margin-bottom: 0

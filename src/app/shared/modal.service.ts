@@ -2,13 +2,14 @@ import { Injectable, ViewContainerRef, ComponentFactoryResolver, ComponentRef } 
 
 import { Product } from '../model/product.model';
 import { ModalResults } from './modal-results.enum';
-import { ModalComponent, ModalBase } from '../store/modal/modal.component';
+import { ModalComponent } from '../store/modal/modal.component';
 
 import { Subject } from 'rxjs/Subject';
 
 @Injectable()
 export class ModalService {
   public modalContainer: ViewContainerRef;
+  public state: Subject<ModalResults>;
 
   constructor(private _cfr: ComponentFactoryResolver) { }
 
@@ -33,12 +34,12 @@ export class ModalService {
   }
 
   // tslint:disable-next-line:no-shadowed-variable
-  public showModal<ModalComponent extends ModalBase>(componentType: { new(...args: any[]): ModalComponent; },
+  public showModal<ModalComponent>(componentType: { new(...args: any[]): ModalComponent; },
     data: { product: Product, type: string }): Subject<ModalResults> {
 
     const modal = this._createComponentWithData(componentType, data);
     this.modalContainer.insert(modal.hostView);
-    const subject = modal.instance.getModalState();
-    return subject;
+    this.state = new Subject<ModalResults>();
+    return this.state;
   }
 }

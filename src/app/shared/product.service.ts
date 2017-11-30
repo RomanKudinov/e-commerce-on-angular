@@ -5,6 +5,12 @@ import { Observable } from 'rxjs/Observable';
 import { filter, map, find } from 'rxjs/operators';
 import { Subject } from 'rxjs/Subject';
 
+export enum Categories {
+  Common,
+  Collection,
+  Style
+}
+
 @Injectable()
 export class ProductService {
   private _products: Observable<Product[]>;
@@ -17,8 +23,10 @@ export class ProductService {
     return this._products.pipe(
       map((products: Product[]) => {
         return products.filter((p: Product) => {
-          return (categories[0] === p.categories[0] && categories[1] === p.categories[1])
-          || (categories[0] === p.categories[0] && categories[1] === null);
+          return categories[0] === p.categories[Categories.Common]
+            && categories[1] === p.categories[Categories.Collection]
+            || categories[1] === p.categories[Categories.Style]
+            || categories[1] === null;
         });
       })
     );

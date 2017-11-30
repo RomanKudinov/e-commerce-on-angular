@@ -10,6 +10,7 @@ import { ProductService } from '../../shared/product.service';
 import { Product } from '../../model/product.model';
 import { Option } from '../../model/option.model';
 import { CartService } from '../../shared/cart.service';
+import { ModalResults } from '../../shared/modal-results.enum';
 
 
 interface LineOption {
@@ -83,6 +84,7 @@ export class ProductComponent implements OnInit {
       quantity: this.quantity,
       image: this.product.titleImage
     }));
+    this._modalService.state.next(ModalResults.Closed);
   }
 
   addLineToCart() {

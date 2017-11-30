@@ -228,7 +228,8 @@ module.exports = function () {
                                             "children": [
                                                 {
                                                     "tagName": "a",
-                                                    "content": "Dream Angels"
+                                                    "content": "Dream Angels",
+                                                    "link": "/bras/dream-angels"
                                                 }
                                             ]
                                         },
@@ -3253,7 +3254,7 @@ module.exports = function () {
                 id: uuid.v4().substr(0, 8), alt: "bra",
                 name: 'Dream Angels Demi Bra',
                 description: 'This dreamy demi is even more heavenly, with softer Memory Fit lining that conforms to your curves, a smoothing U-shaped back and stretchier lace sides for a flawless, ultra-comfy fit.',
-                categories: ['bras', 'demi'],
+                categories: ['bras', 'dream-angels', 'demi'],
                 price: 1736.48,
                 link: '/bras/demi',
                 bandSize: [
