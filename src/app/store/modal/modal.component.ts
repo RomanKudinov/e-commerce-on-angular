@@ -7,18 +7,23 @@ import { Product } from '../../model/product.model';
 import { ModalService } from '../../shared/modal.service';
 import { ModalResults } from '../../shared/modal-results.enum';
 
+export abstract class ModalBase {
+  public abstract getModalState(): Subject<ModalResults>;
+}
+
 @Component({
   selector: 'vs-modal',
   templateUrl: './modal.component.html',
   styleUrls: ['./modal.component.sass']
 })
-export class ModalComponent implements OnInit {
+export class ModalComponent extends ModalBase implements OnInit {
   public product: Product;
   public type: string;
   public state: Subject<ModalResults>;
 
   constructor(private _modalService: ModalService,
     private _elem: ElementRef) {
+      super();
       this.state = new Subject();
     }
 

@@ -1,7 +1,9 @@
-import { ModalComponent } from '../store/modal/modal.component';
 import { Injectable, ViewContainerRef, ComponentFactoryResolver, ComponentRef } from '@angular/core';
+
 import { Product } from '../model/product.model';
 import { ModalResults } from './modal-results.enum';
+import { ModalComponent, ModalBase } from '../store/modal/modal.component';
+
 import { Subject } from 'rxjs/Subject';
 
 @Injectable()
@@ -31,7 +33,7 @@ export class ModalService {
   }
 
   // tslint:disable-next-line:no-shadowed-variable
-  public showModal<ModalComponent>(componentType: { new(...args: any[]): ModalComponent; },
+  public showModal<ModalComponent extends ModalBase>(componentType: { new(...args: any[]): ModalComponent; },
     data: { product: Product, type: string }): Subject<ModalResults> {
 
     const modal = this._createComponentWithData(componentType, data);

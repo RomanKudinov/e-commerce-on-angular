@@ -2,15 +2,15 @@ import {
   Component,
   OnInit,
   Input,
-  ElementRef,
-  ContentChild,
-  Renderer2,
   Output,
-  EventEmitter
+  EventEmitter,
+  ViewChild,
+  ViewContainerRef
 } from '@angular/core';
 
 import { FilterService } from '../../shared/filter.service';
 import { Option } from '../../model/option.model';
+import { ModalService } from '../../shared/modal.service';
 
 
 @Component({
@@ -19,6 +19,7 @@ import { Option } from '../../model/option.model';
   styleUrls: ['./option.component.sass']
 })
 export class OptionComponent implements OnInit {
+  @ViewChild('popup', {read: ViewContainerRef}) popup: ViewContainerRef;
   @Input() option: Option;
   @Input() type: string;
   @Input() index: number;
@@ -27,7 +28,8 @@ export class OptionComponent implements OnInit {
   public missed = false;
 
 
-  constructor(private _filterService: FilterService) {
+  constructor(private _filterService: FilterService,
+    private _modalService: ModalService) {
   }
 
   ngOnInit() {
