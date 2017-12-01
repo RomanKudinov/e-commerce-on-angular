@@ -1,0 +1,6 @@
+<div class="popup" *ngIf="this.type === 'color' || this.missed">
+  <img *ngIf="this.type === 'color'" [src]="option.src" [alt]="option.title">
+  <h4>{{option.title}}</h4>
+  <span *ngIf="this.missed" class="unavailable">Unavailable in {{option.miss.join(' & ')}}</span>
+  <span *ngIf="this.type === 'color'">Click to view photo</span>
+</div>

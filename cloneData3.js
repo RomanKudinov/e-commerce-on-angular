@@ -2820,22 +2820,22 @@ module.exports = function () {
                 price: 1736.48,
                 link: '/bras/demi',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Black with Lace Back'] },
                     { title: '38' },
-                    { title: '40', miss: ['b'] }
+                    { title: '40', miss: ['B'] }
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['40'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Black with Lace Back'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['40'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Black with Lace Back'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", title: "Black with Lace Back", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", title: "Black with Lace Back", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/46/50/4650f07345e948a394c77848bfd36ab4/V505878_S62_SW.jpg", title: "Vintage Rose with Lace Back" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/98/bb/98bb40748f2e44a8abaffbc2d68bb4c2/V505781_CTQ_SW.jpg", title: "Pastel Blue with Lace Back" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a2/c9/a2c97fcf4d044cbb84bec282fadfd293/V504802_CQM_SW.jpg", title: "Gold Shine" },
@@ -2887,22 +2887,22 @@ module.exports = function () {
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Burnished Lilac Shine'] },
                     { title: '38' },
-                    { title: '40', miss: ['b'] }
+                    { title: '40', miss: ['B'] }
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['40'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Burnished Lilac Shine'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['40'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Burnished Lilac Shine'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", title: "Burnished Lilac Shine", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", title: "Burnished Lilac Shine", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/37/ec/37ec4248a69d49d583adb0daa45fbcaa/V505523_2C2_SW.jpg", title: "Winter Lake Shine" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/76/fa/76facd57125e458eac2b13a055d91a44/V505733_CPH_SW.jpg", title: "Nile Shine" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9b/4a/9b4a785a845b416e9027354e011420e6/V505854_S62_SW.jpg", title: "Vintage Rose Shine" },
@@ -2957,21 +2957,21 @@ module.exports = function () {
                 price: 958.53,
                 link: '/bras/balconet',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['White with Shell Pink Crossdye'] },
-                    { title: '38', miss: ['b'] },
+                    { title: '38', miss: ['B'] },
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['38'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'White with Shell Pink Crossdye'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['38'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'White with Shell Pink Crossdye'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", title: "White with Shell Pink Crossdye", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", title: "White with Shell Pink Crossdye", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/3f/3d/3f3d782ce11a40ba99aaf3893ffcebbf/V500110_BPU_SW.jpg", title: "Kir Retro Romance Lace" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/67/2467d9057ff24b7ab379e6a3f475d83a/V504699_CQN_SW.jpg", title: "Black Pearl Shine" },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", title: "Evening Blush with Pinky Cheeks Crossdye" },
@@ -2996,21 +2996,21 @@ module.exports = function () {
                 price: 1541.99,
                 link: '/bras/strapless',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Wood Rose with Rebel Lace'] },
-                    { title: '38', miss: ['b'] },
+                    { title: '38', miss: ['B'] },
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['38'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Wood Rose with Rebel Lace'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['38'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Wood Rose with Rebel Lace'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", title: "Wood Rose with Rebel Lace", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", title: "Wood Rose with Rebel Lace", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479586_DK9_SW.jpg", title: "White" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dc/86/dc867b0af770493284fbf087c5eda248/V496915_9TX_SW.jpg", title: "Pink Ivory" },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479585_DJ5_SW.jpg", title: "Almost Nude" },
@@ -3039,22 +3039,22 @@ module.exports = function () {
                 price: 1736.48,
                 link: '/bras/demi',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Black with Lace Back'] },
                     { title: '38' },
-                    { title: '40', miss: ['b'] }
+                    { title: '40', miss: ['B'] }
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['40'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Black with Lace Back'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['40'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Black with Lace Back'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", title: "Black with Lace Back", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", title: "Black with Lace Back", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/46/50/4650f07345e948a394c77848bfd36ab4/V505878_S62_SW.jpg", title: "Vintage Rose with Lace Back" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/98/bb/98bb40748f2e44a8abaffbc2d68bb4c2/V505781_CTQ_SW.jpg", title: "Pastel Blue with Lace Back" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a2/c9/a2c97fcf4d044cbb84bec282fadfd293/V504802_CQM_SW.jpg", title: "Gold Shine" },
@@ -3106,22 +3106,22 @@ module.exports = function () {
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Burnished Lilac Shine'] },
                     { title: '38' },
-                    { title: '40', miss: ['b'] }
+                    { title: '40', miss: ['B'] }
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['40'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Burnished Lilac Shine'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['40'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Burnished Lilac Shine'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", title: "Burnished Lilac Shine", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", title: "Burnished Lilac Shine", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/37/ec/37ec4248a69d49d583adb0daa45fbcaa/V505523_2C2_SW.jpg", title: "Winter Lake Shine" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/76/fa/76facd57125e458eac2b13a055d91a44/V505733_CPH_SW.jpg", title: "Nile Shine" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9b/4a/9b4a785a845b416e9027354e011420e6/V505854_S62_SW.jpg", title: "Vintage Rose Shine" },
@@ -3176,21 +3176,21 @@ module.exports = function () {
                 price: 958.53,
                 link: '/bras/balconet',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['White with Shell Pink Crossdye'] },
-                    { title: '38', miss: ['b'] },
+                    { title: '38', miss: ['B'] },
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['38'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'White with Shell Pink Crossdye'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['38'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'White with Shell Pink Crossdye'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", title: "White with Shell Pink Crossdye", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", title: "White with Shell Pink Crossdye", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/3f/3d/3f3d782ce11a40ba99aaf3893ffcebbf/V500110_BPU_SW.jpg", title: "Kir Retro Romance Lace" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/67/2467d9057ff24b7ab379e6a3f475d83a/V504699_CQN_SW.jpg", title: "Black Pearl Shine" },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", title: "Evening Blush with Pinky Cheeks Crossdye" },
@@ -3215,21 +3215,21 @@ module.exports = function () {
                 price: 1541.99,
                 link: '/bras/strapless',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Wood Rose with Rebel Lace'] },
-                    { title: '38', miss: ['b'] },
+                    { title: '38', miss: ['B'] },
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['38'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Wood Rose with Rebel Lace'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['38'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Wood Rose with Rebel Lace'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", title: "Wood Rose with Rebel Lace", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", title: "Wood Rose with Rebel Lace", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479586_DK9_SW.jpg", title: "White" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dc/86/dc867b0af770493284fbf087c5eda248/V496915_9TX_SW.jpg", title: "Pink Ivory" },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479585_DJ5_SW.jpg", title: "Almost Nude" },
@@ -3258,22 +3258,22 @@ module.exports = function () {
                 price: 1736.48,
                 link: '/bras/demi',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Black with Lace Back'] },
                     { title: '38' },
-                    { title: '40', miss: ['b'] }
+                    { title: '40', miss: ['B'] }
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['40'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Black with Lace Back'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['40'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Black with Lace Back'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", title: "Black with Lace Back", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", title: "Black with Lace Back", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/46/50/4650f07345e948a394c77848bfd36ab4/V505878_S62_SW.jpg", title: "Vintage Rose with Lace Back" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/98/bb/98bb40748f2e44a8abaffbc2d68bb4c2/V505781_CTQ_SW.jpg", title: "Pastel Blue with Lace Back" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a2/c9/a2c97fcf4d044cbb84bec282fadfd293/V504802_CQM_SW.jpg", title: "Gold Shine" },
@@ -3325,22 +3325,22 @@ module.exports = function () {
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Burnished Lilac Shine'] },
                     { title: '38' },
-                    { title: '40', miss: ['b'] }
+                    { title: '40', miss: ['B'] }
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['40'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Burnished Lilac Shine'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['40'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Burnished Lilac Shine'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", title: "Burnished Lilac Shine", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", title: "Burnished Lilac Shine", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/37/ec/37ec4248a69d49d583adb0daa45fbcaa/V505523_2C2_SW.jpg", title: "Winter Lake Shine" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/76/fa/76facd57125e458eac2b13a055d91a44/V505733_CPH_SW.jpg", title: "Nile Shine" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9b/4a/9b4a785a845b416e9027354e011420e6/V505854_S62_SW.jpg", title: "Vintage Rose Shine" },
@@ -3395,21 +3395,21 @@ module.exports = function () {
                 price: 958.53,
                 link: '/bras/balconet',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['White with Shell Pink Crossdye'] },
-                    { title: '38', miss: ['b'] },
+                    { title: '38', miss: ['B'] },
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['38'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'White with Shell Pink Crossdye'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['38'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'White with Shell Pink Crossdye'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", title: "White with Shell Pink Crossdye", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", title: "White with Shell Pink Crossdye", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/3f/3d/3f3d782ce11a40ba99aaf3893ffcebbf/V500110_BPU_SW.jpg", title: "Kir Retro Romance Lace" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/67/2467d9057ff24b7ab379e6a3f475d83a/V504699_CQN_SW.jpg", title: "Black Pearl Shine" },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", title: "Evening Blush with Pinky Cheeks Crossdye" },
@@ -3434,21 +3434,21 @@ module.exports = function () {
                 price: 1541.99,
                 link: '/bras/strapless',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Wood Rose with Rebel Lace'] },
-                    { title: '38', miss: ['b'] },
+                    { title: '38', miss: ['B'] },
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['38'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Wood Rose with Rebel Lace'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['38'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Wood Rose with Rebel Lace'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", title: "Wood Rose with Rebel Lace", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", title: "Wood Rose with Rebel Lace", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479586_DK9_SW.jpg", title: "White" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dc/86/dc867b0af770493284fbf087c5eda248/V496915_9TX_SW.jpg", title: "Pink Ivory" },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479585_DJ5_SW.jpg", title: "Almost Nude" },
@@ -3477,22 +3477,22 @@ module.exports = function () {
                 price: 1736.48,
                 link: '/bras/demi',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Black with Lace Back'] },
                     { title: '38' },
-                    { title: '40', miss: ['b'] }
+                    { title: '40', miss: ['B'] }
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['40'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Black with Lace Back'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['40'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Black with Lace Back'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", title: "Black with Lace Back", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", title: "Black with Lace Back", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/46/50/4650f07345e948a394c77848bfd36ab4/V505878_S62_SW.jpg", title: "Vintage Rose with Lace Back" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/98/bb/98bb40748f2e44a8abaffbc2d68bb4c2/V505781_CTQ_SW.jpg", title: "Pastel Blue with Lace Back" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a2/c9/a2c97fcf4d044cbb84bec282fadfd293/V504802_CQM_SW.jpg", title: "Gold Shine" },
@@ -3544,22 +3544,22 @@ module.exports = function () {
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Burnished Lilac Shine'] },
                     { title: '38' },
-                    { title: '40', miss: ['b'] }
+                    { title: '40', miss: ['B'] }
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['40'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Burnished Lilac Shine'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['40'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Burnished Lilac Shine'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", title: "Burnished Lilac Shine", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", title: "Burnished Lilac Shine", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/37/ec/37ec4248a69d49d583adb0daa45fbcaa/V505523_2C2_SW.jpg", title: "Winter Lake Shine" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/76/fa/76facd57125e458eac2b13a055d91a44/V505733_CPH_SW.jpg", title: "Nile Shine" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9b/4a/9b4a785a845b416e9027354e011420e6/V505854_S62_SW.jpg", title: "Vintage Rose Shine" },
@@ -3614,21 +3614,21 @@ module.exports = function () {
                 price: 958.53,
                 link: '/bras/balconet',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['White with Shell Pink Crossdye'] },
-                    { title: '38', miss: ['b'] },
+                    { title: '38', miss: ['B'] },
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['38'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'White with Shell Pink Crossdye'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['38'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'White with Shell Pink Crossdye'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", title: "White with Shell Pink Crossdye", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", title: "White with Shell Pink Crossdye", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/3f/3d/3f3d782ce11a40ba99aaf3893ffcebbf/V500110_BPU_SW.jpg", title: "Kir Retro Romance Lace" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/67/2467d9057ff24b7ab379e6a3f475d83a/V504699_CQN_SW.jpg", title: "Black Pearl Shine" },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", title: "Evening Blush with Pinky Cheeks Crossdye" },
@@ -3653,21 +3653,21 @@ module.exports = function () {
                 price: 1541.99,
                 link: '/bras/strapless',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Wood Rose with Rebel Lace'] },
-                    { title: '38', miss: ['b'] },
+                    { title: '38', miss: ['B'] },
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['38'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Wood Rose with Rebel Lace'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['38'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Wood Rose with Rebel Lace'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", title: "Wood Rose with Rebel Lace", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", title: "Wood Rose with Rebel Lace", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479586_DK9_SW.jpg", title: "White" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dc/86/dc867b0af770493284fbf087c5eda248/V496915_9TX_SW.jpg", title: "Pink Ivory" },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479585_DJ5_SW.jpg", title: "Almost Nude" },
@@ -3696,22 +3696,22 @@ module.exports = function () {
                 price: 1736.48,
                 link: '/bras/demi',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Black with Lace Back'] },
                     { title: '38' },
-                    { title: '40', miss: ['b'] }
+                    { title: '40', miss: ['B'] }
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['40'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Black with Lace Back'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['40'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Black with Lace Back'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", title: "Black with Lace Back", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/f8/fe/f8fedc876ef741f489a52c1681118517/V507782_BVJ_SW.jpg", title: "Black with Lace Back", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/46/50/4650f07345e948a394c77848bfd36ab4/V505878_S62_SW.jpg", title: "Vintage Rose with Lace Back" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/98/bb/98bb40748f2e44a8abaffbc2d68bb4c2/V505781_CTQ_SW.jpg", title: "Pastel Blue with Lace Back" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/a2/c9/a2c97fcf4d044cbb84bec282fadfd293/V504802_CQM_SW.jpg", title: "Gold Shine" },
@@ -3763,22 +3763,22 @@ module.exports = function () {
                 price: 1375.29,
                 link: '/bras/perfect-coverage',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Burnished Lilac Shine'] },
                     { title: '38' },
-                    { title: '40', miss: ['b'] }
+                    { title: '40', miss: ['B'] }
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['40'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Burnished Lilac Shine'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['40'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Burnished Lilac Shine'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", title: "Burnished Lilac Shine", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4c/d2/4cd2841f1d9b49038347d08a780770cf/V504706_BDX_SW.jpg", title: "Burnished Lilac Shine", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/37/ec/37ec4248a69d49d583adb0daa45fbcaa/V505523_2C2_SW.jpg", title: "Winter Lake Shine" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/76/fa/76facd57125e458eac2b13a055d91a44/V505733_CPH_SW.jpg", title: "Nile Shine" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/9b/4a/9b4a785a845b416e9027354e011420e6/V505854_S62_SW.jpg", title: "Vintage Rose Shine" },
@@ -3833,21 +3833,21 @@ module.exports = function () {
                 price: 958.53,
                 link: '/bras/balconet',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['White with Shell Pink Crossdye'] },
-                    { title: '38', miss: ['b'] },
+                    { title: '38', miss: ['B'] },
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['38'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'White with Shell Pink Crossdye'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['38'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'White with Shell Pink Crossdye'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", title: "White with Shell Pink Crossdye", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/7c/65/7c655f5522db415e8322ccc52ee3f6df/V494282_DK9_SW.jpg", title: "White with Shell Pink Crossdye", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/3f/3d/3f3d782ce11a40ba99aaf3893ffcebbf/V500110_BPU_SW.jpg", title: "Kir Retro Romance Lace" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/24/67/2467d9057ff24b7ab379e6a3f475d83a/V504699_CQN_SW.jpg", title: "Black Pearl Shine" },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V857308_H28.jpg", title: "Evening Blush with Pinky Cheeks Crossdye" },
@@ -3872,21 +3872,21 @@ module.exports = function () {
                 price: 1541.99,
                 link: '/bras/strapless',
                 bandSize: [
-                    { title: '32', miss: ['ddd'] },
+                    { title: '32', miss: ['DDD'] },
                     { title: '34' },
                     { title: '36', miss: ['Wood Rose with Rebel Lace'] },
-                    { title: '38', miss: ['b'] },
+                    { title: '38', miss: ['B'] },
                 ],
                 cupSize: [
-                    { title: 'a' },
-                    { title: 'b', miss: ['38'] },
-                    { title: 'c' },
-                    { title: 'd' },
-                    { title: 'dd' },
-                    { title: 'ddd', miss: ['32', 'Wood Rose with Rebel Lace'] }
+                    { title: 'A' },
+                    { title: 'B', miss: ['38'] },
+                    { title: 'C' },
+                    { title: 'D' },
+                    { title: 'DD' },
+                    { title: 'DDD', miss: ['32', 'Wood Rose with Rebel Lace'] }
                 ],
                 colors: [
-                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", title: "Wood Rose with Rebel Lace", miss: ['36', 'ddd'] },
+                    { src: "https://dm.victoriassecret.com/p/s/125x125/tif/4b/45/4b4549d075e942f4bc8194ce5810c2f3/V501610_BSZ_SW.jpg", title: "Wood Rose with Rebel Lace", miss: ['36', 'DDD'] },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479586_DK9_SW.jpg", title: "White" },
                     { src: "https://dm.victoriassecret.com/p/s/125x125/tif/dc/86/dc867b0af770493284fbf087c5eda248/V496915_9TX_SW.jpg", title: "Pink Ivory" },
                     { src: "https://dm.victoriassecret.com/product/swatch/125x125/V479585_DJ5_SW.jpg", title: "Almost Nude" },

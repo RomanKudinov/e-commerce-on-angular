@@ -15,6 +15,7 @@ import { NavigationService } from './shared/navigation.service';
 import { TopLineModule } from './top-line/top-line.module';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { PopupComponent } from './store/popup/popup.component';
 
 import { RestDataService } from './shared/rest-data.service';
 import { CartService } from './shared/cart.service';
@@ -39,7 +40,8 @@ import { ModalService } from './shared/modal.service';
     CartModule
   ],
   entryComponents: [
-    ModalComponent
+    ModalComponent,
+    PopupComponent
   ],
   providers: [
     RestDataService,

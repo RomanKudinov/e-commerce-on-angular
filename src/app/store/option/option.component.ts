@@ -11,20 +11,22 @@ import {
 import { FilterService } from '../../shared/filter.service';
 import { Option } from '../../model/option.model';
 import { ModalService } from '../../shared/modal.service';
+import { PopupComponent } from '../popup/popup.component';
+import { ModalResults } from '../../shared/modal-results.enum';
 
 
 @Component({
   selector: 'vs-option',
   templateUrl: './option.component.html',
-  styleUrls: ['./option.component.sass']
+  styleUrls: ['./option.component.sass'],
+  providers: [ModalService]
 })
 export class OptionComponent implements OnInit {
-  @ViewChild('popup', {read: ViewContainerRef}) popup: ViewContainerRef;
+  @ViewChild('popup', { read: ViewContainerRef }) popup: ViewContainerRef;
   @Input() option: Option;
   @Input() type: string;
   @Input() index: number;
   @Output() title = new EventEmitter<Option>();
-  public hovered = false;
   public missed = false;
 
 
@@ -33,18 +35,40 @@ export class OptionComponent implements OnInit {
   }
 
   ngOnInit() {
+    this._modalService.init(this.popup);
+
     this._filterService.getItem().subscribe((item) => {
-      this.filterOption(item);
+      this._filterOption(item);
     });
   }
 
-  changeState(type: string, hovered: boolean) {
-    if (type === 'color') {
-      this.hovered = hovered;
+  showPopup() {
+    if (this.type !== 'color' && !this.missed) {
+      return;
     }
+    console.log('create');
+    this._createPopupComponent({option: this.option, type: this.type, missed: this.missed});
   }
 
-  private filterOption(missItem) {
+  hidePopup() {
+    if (this.type !== 'color' && !this.missed) {
+      return;
+    }
+    this._modalService.state.next(ModalResults.Closed);
+  }
+
+  private _createPopupComponent(data: any) {
+    const $modalState = this._modalService.showModal(PopupComponent, data);
+
+    $modalState.subscribe((state: ModalResults) => {
+      if (state = ModalResults.Closed) {
+        this._modalService.modalContainer.clear();
+        $modalState.unsubscribe();
+      }
+    });
+  }
+
+  private _filterOption(missItem) {
     for (const item in missItem) {
       if (missItem[item] !== null) {
         const missing = missItem[item].some(elem => elem === this.option.title);

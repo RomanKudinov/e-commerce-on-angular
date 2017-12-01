@@ -35,7 +35,7 @@ export class ModalService {
 
   // tslint:disable-next-line:no-shadowed-variable
   public showModal<ModalComponent>(componentType: { new(...args: any[]): ModalComponent; },
-    data: { product: Product, type: string }): Subject<ModalResults> {
+    data: any): Subject<ModalResults> { // Возможно проблема из-за типов!!!
 
     const modal = this._createComponentWithData(componentType, data);
     this.modalContainer.insert(modal.hostView);

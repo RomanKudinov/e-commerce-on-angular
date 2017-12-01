@@ -11,7 +11,7 @@ import { Product } from '../../model/product.model';
 import { Option } from '../../model/option.model';
 import { CartService } from '../../shared/cart.service';
 import { ModalResults } from '../../shared/modal-results.enum';
-
+import { FilterService } from '../../shared/filter.service';
 
 interface LineOption {
   color: Option;
@@ -36,10 +36,17 @@ export class ProductComponent implements OnInit {
   constructor(private _productService: ProductService,
     private _route: ActivatedRoute,
     private _cart: CartService,
-    private _modalService: ModalService) {
+    private _modalService: ModalService,
+    private _filterService: FilterService) {
   }
 
   ngOnInit() {
+    this._filterService.missOption = {
+      color: null,
+      band: null,
+      cup: null
+    };
+
     if (this.type === null) {
       this._route.params.forEach((params: Params) => {
         const id = params['id'];

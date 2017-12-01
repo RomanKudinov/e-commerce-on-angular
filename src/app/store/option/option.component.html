@@ -4,16 +4,18 @@
     value="{{option.title}}" 
     [disabled]="missed">
 <label for="{{type}}-{{+index+1}}" 
-    (mouseenter)="changeState(type, true)"
-    (mouseleave)="changeState(type, false)"
+    (mouseenter)="showPopup()"
+    (mouseleave)="hidePopup()"
     (click)="sendOption()"
     [class.disabled-color]="missed && type === 'color'"
     [class.disabled]="missed && type !== 'color'">
     <span *ngIf="type !== 'color'">
-        {{option.title.toUpperCase()}}
+        {{option.title}}
     </span>
-    <ng-content select="img"></ng-content>
+    <img *ngIf="type === 'color'" [src]="option.src" [alt]="option.title">
 </label>
-<ng-container *ngIf="hovered">
+<div #popup></div>
+
+<!-- <ng-container *ngIf="hovered">
     <ng-content select="div"></ng-content>
-</ng-container>
+</ng-container> -->

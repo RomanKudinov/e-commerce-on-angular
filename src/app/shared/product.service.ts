@@ -24,9 +24,9 @@ export class ProductService {
       map((products: Product[]) => {
         return products.filter((p: Product) => {
           return categories[0] === p.categories[Categories.Common]
-            && categories[1] === p.categories[Categories.Collection]
+            && (categories[1] === p.categories[Categories.Collection]
             || categories[1] === p.categories[Categories.Style]
-            || categories[1] === null;
+            || categories[1] === null);
         });
       })
     );

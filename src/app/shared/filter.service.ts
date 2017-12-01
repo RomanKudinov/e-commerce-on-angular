@@ -12,7 +12,7 @@ interface MissOption {
 @Injectable()
 export class FilterService {
   private $items = new Subject<MissOption>();
-  private _missOption: MissOption = {
+  public missOption: MissOption = {
     color: null,
     band: null,
     cup: null
@@ -23,15 +23,15 @@ export class FilterService {
   sendOption(item: any, type: string) {
     switch (type) {
       case 'color':
-      this._missOption.color = item;
+      this.missOption.color = item;
         break;
       case 'band':
-      this._missOption.band = item;
+      this.missOption.band = item;
         break;
       case 'cup':
-      this._missOption.cup = item;
+      this.missOption.cup = item;
     }
-    this.$items.next(this._missOption);
+    this.$items.next(this.missOption);
   }
 
   getItem(): Observable<MissOption> {

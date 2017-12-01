@@ -9,6 +9,7 @@ import { OptionComponent } from './option/option.component';
 import { FilterService } from '../shared/filter.service';
 import { OptionsContainerComponent } from './options-container/options-container.component';
 import { ModalComponent } from './modal/modal.component';
+import { PopupComponent } from './popup/popup.component';
 
 @NgModule({
   imports: [
@@ -16,7 +17,7 @@ import { ModalComponent } from './modal/modal.component';
     StoreRoutingModule,
     AngularFontAwesomeModule
   ],
-  declarations: [StoreComponent, ProductComponent, OptionComponent, OptionsContainerComponent, ModalComponent],
+  declarations: [StoreComponent, ProductComponent, OptionComponent, OptionsContainerComponent, ModalComponent, PopupComponent],
   exports: [ModalComponent],
   providers: [FilterService]
 })
